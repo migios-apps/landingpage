@@ -87,7 +87,7 @@ export function BuildAnything() {
   return (
     <section
       id="build-anything"
-      className="relative h-auto overflow-hidden bg-white md:h-[80vh] md:max-h-[80vh]"
+      className="relative h-auto overflow-hidden bg-white dark:bg-[#0b0b0b] md:h-[80vh] md:max-h-[80vh]"
     >
       <div className="grid h-full grid-cols-1 md:grid-cols-2">
         <div className="order-2 flex h-[70vh] items-center justify-center overflow-hidden bg-[linear-gradient(165deg,#fe3200_8%,#fc8c04_48%,rgba(242,138,111,0)_86%),linear-gradient(90deg,#fc8c04,#fc8c04)] px-5 md:order-none md:h-auto md:pl-[max(50px,calc((100vw-1240px)/2+50px))] md:pr-0">
@@ -117,12 +117,12 @@ export function BuildAnything() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-7 overflow-hidden bg-[#f1f2f6] px-5 py-14 md:px-16 md:py-20">
+        <div className="flex flex-col justify-start gap-7 overflow-hidden bg-[#f1f2f6] px-5 py-14 dark:bg-[#111] md:px-16 md:py-20">
           <div className="text-center">
-            <h2 className="mb-4 text-[clamp(32px,6vw,48px)] font-medium leading-[1.2] text-[#131316]">
+            <h2 className="mb-4 text-[clamp(32px,6vw,48px)] font-medium leading-[1.2] text-[#131316] dark:text-white">
               Manage Everything
             </h2>
-            <p className="mx-auto max-w-[520px] text-[clamp(1rem,1.3vw,1.12rem)] leading-relaxed text-[#5f6470]">
+            <p className="mx-auto max-w-[520px] text-[clamp(1rem,1.3vw,1.12rem)] leading-relaxed text-[#5f6470] dark:text-white/60">
               Migios helps you onboard members, plan classes, collect
               payments, control access, and track every location&rsquo;s
               growth.

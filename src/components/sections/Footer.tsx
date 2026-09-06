@@ -1,23 +1,22 @@
-import { MigiosMark, MigiosLogo } from "@/components/MigiosLogo"
+import { MigiosLogo } from "@/components/MigiosLogo"
 
-const linkCls = "fx-link text-[0.9375rem] text-[#222] no-underline"
-const headCls = "mb-4 text-[0.8125rem] font-medium text-[#999]"
+const linkCls = "fx-link text-[0.9375rem] text-[#222] no-underline dark:text-[#e5e5e5]"
+const headCls = "mb-4 text-[0.8125rem] font-medium text-[#999] dark:text-white/45"
 
 export function Footer() {
   return (
-    <>
-      <footer
-        className="bg-cover bg-top bg-no-repeat px-4 py-8 md:px-8 md:py-12"
-        style={{ backgroundImage: "url(/images/footer-bg.jpg)" }}
-      >
-        <div className="mx-auto w-full max-w-[1240px] overflow-hidden rounded-[32px] bg-white shadow-[0_18px_50px_rgba(19,19,22,0.10)]">
+    <footer
+      id="footer"
+      className="bg-[url('/images/footer-bg.jpg')] bg-cover bg-top bg-no-repeat px-4 py-8 dark:bg-[#080808] dark:bg-none md:px-8 md:py-12"
+    >
+        <div className="mx-auto w-full max-w-[1240px] overflow-hidden rounded-[32px] bg-white shadow-[0_18px_50px_rgba(19,19,22,0.10)] dark:bg-[#121212] dark:shadow-[0_18px_60px_rgba(0,0,0,0.4)]">
           <div className="px-6 md:px-[50px]">
             <div className="flex flex-col gap-12 pb-10 pt-8">
               <div className="flex flex-col gap-4">
                 <a href="/" aria-label="Migios home" className="inline-block">
                   <MigiosLogo className="h-10" />
                 </a>
-                <p className="max-w-[560px] text-[0.9375rem] leading-relaxed text-[#444]">
+                <p className="max-w-[560px] text-[0.9375rem] leading-relaxed text-[#444] dark:text-white/60">
                   Migios — Multi Gym In One Solution. The all-in-one platform
                   for gym memberships, class schedules, billing, and access
                   control, built for multi-location fitness businesses.
@@ -35,7 +34,7 @@ export function Footer() {
                     <a href="/pricing" className={linkCls}>Pricing</a>
                     <a href="/dashboard" className={linkCls}>Start free trial</a>
                   </div>
-                  <hr className="my-4 h-px w-full border-0 bg-[#ececec]" />
+                  <hr className="my-4 h-px w-full border-0 bg-[#ececec] dark:bg-white/10" />
                   <div className="flex flex-col gap-2">
                     <a href="/compare" className={linkCls}>Compare</a>
                     <a href="/compare/migios-vs-spreadsheets" className={linkCls}>Migios vs spreadsheets</a>
@@ -67,7 +66,7 @@ export function Footer() {
                     <a href="/api" className={linkCls}>API docs</a>
                     <a href="/community" className={linkCls}>Community</a>
                   </div>
-                  <hr className="my-4 h-px w-full border-0 bg-[#ececec]" />
+                  <hr className="my-4 h-px w-full border-0 bg-[#ececec] dark:bg-white/10" />
                   <div className="flex flex-col gap-2">
                     <a href="/directory" className={linkCls}>Gym directory</a>
                     <a href="/directory/united-states" className={linkCls}>Gyms in the US</a>
@@ -98,23 +97,10 @@ export function Footer() {
             </div>
           </div>
           <div className="h-0.5 w-full bg-[linear-gradient(to_right,#fe3200,#fc8c04,#fcdbaf,#a855f7,#3b82f6)]" />
-          <div className="px-6 py-5 text-sm text-[#999] md:px-[50px]">
+          <div className="px-6 py-5 text-sm text-[#999] dark:text-white/40 md:px-[50px]">
             © 2026 Migios. All rights reserved.
           </div>
         </div>
-      </footer>
-
-      <a
-        href="/"
-        data-migios-badge="1"
-        className="fixed bottom-4 right-4 z-[2147483647] inline-flex h-7 items-center gap-1.5 rounded-lg border border-black/10 bg-white pl-1.5 pr-2.5 no-underline"
-        aria-label="Made with Migios"
-      >
-        <MigiosMark className="size-4" />
-        <span className="text-[13px] font-medium leading-none text-[#080808]">
-          Made with Migios
-        </span>
-      </a>
-    </>
+    </footer>
   )
 }

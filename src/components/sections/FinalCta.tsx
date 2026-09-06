@@ -1,6 +1,6 @@
 export function FinalCta() {
   return (
-    <section id="cta" className="bg-white pt-16">
+    <section id="cta" className="bg-white pt-16 dark:bg-[#0b0b0b]">
       <div className="mx-auto w-full max-w-[1240px] px-5 md:px-[50px]">
         <div className="relative overflow-hidden rounded-[20px] px-6 py-16 text-center md:px-10 md:py-[100px]">
           <img

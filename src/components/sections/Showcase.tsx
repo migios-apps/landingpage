@@ -1,95 +1,129 @@
-const wide =
-  "mr-4 h-full flex-none rounded-[13px] bg-[#ececec] object-cover shadow-[0_1px_0_rgba(0,0,0,0.04)] w-auto aspect-[45/32] object-top"
-const tall =
-  "mr-4 h-full flex-none rounded-[13px] bg-[#ececec] object-cover shadow-[0_1px_0_rgba(0,0,0,0.04)] w-[110px] object-top md:w-[150px]"
-const tallCenter =
-  "mr-4 h-full flex-none rounded-[13px] bg-[#ececec] object-cover shadow-[0_1px_0_rgba(0,0,0,0.04)] w-[110px] object-center md:w-[150px]"
-
-const rowTop = [
-  { src: "/images/gym/gym-rack.jpg", alt: "Iron District — strength gym", cls: wide },
-  { src: "/images/gym/training.jpg", alt: "Northside Performance — coaching", cls: tall },
-  { src: "/images/gym/gym-floor.jpg", alt: "The Foundry — fitness center", cls: wide },
-  { src: "/images/gym/yoga.jpg", alt: "Sunrise Yoga — studio", cls: tall },
-  { src: "/images/gym/barbell.jpg", alt: "Barbell Society — powerlifting", cls: wide },
+const stories = [
+  {
+    src: "/images/product/sales-report-2026.jpg",
+    alt: "Migios sales report showing 2026 revenue totals, invoice metrics, and a monthly performance chart",
+    label: "Sales intelligence",
+    title: "Know what drives revenue",
+    body: "Follow gross sales, net revenue, invoices, and payment performance without piecing together spreadsheets.",
+  },
+  {
+    src: "/images/product/member-report-2026.jpg",
+    alt: "Migios member report showing 2026 total, new, and active member metrics with a growth chart",
+    label: "Member health",
+    title: "See membership momentum",
+    body: "Track new, active, and total members in one privacy-safe view built for fast operational decisions.",
+  },
+  {
+    src: "/images/product/schedule-month-view.jpg",
+    alt: "Migios monthly schedule showing recurring classes and personal-training sessions in September 2026",
+    label: "Schedule control",
+    title: "Keep every session in view",
+    body: "Coordinate classes and personal training from a clear monthly calendar that keeps the team aligned.",
+  },
 ]
 
-const rowBottom = [
-  { src: "/images/gym/focus.jpg", alt: "Core Studio — training", cls: tallCenter },
-  { src: "/images/gym/equipment.jpg", alt: "Eastside Athletic — equipment floor", cls: wide },
-  { src: "/images/gym/boxing.jpg", alt: "Southpaw Boxing — box", cls: tall },
-  { src: "/images/gym/strength.jpg", alt: "Summit Strength — barbell club", cls: wide },
-  { src: "/images/gym/cardio.jpg", alt: "Pulse Cardio — conditioning", cls: tall },
-  { src: "/images/gym/coaching.jpg", alt: "Coach Lab — personal training", cls: wide },
-  { src: "/images/gym/stretch.jpg", alt: "Flex Mobility — recovery studio", cls: tall },
-]
-
-function MarqueeRow({
-  items,
-  direction,
+function ProductFrame({
+  src,
+  alt,
+  priority = false,
 }: {
-  items: typeof rowTop
-  direction: "left" | "right"
+  src: string
+  alt: string
+  priority?: boolean
 }) {
   return (
-    <div
-      className={`flex h-[200px] w-max flex-nowrap [will-change:transform] md:h-[300px] marquee-${direction}`}
-    >
-      {items.map((img) => (
-        <img
-          key={img.alt}
-          className={img.cls}
-          src={img.src}
-          loading="lazy"
-          alt={img.alt}
-        />
-      ))}
-      {items.map((img) => (
-        <img
-          key={`${img.alt}-dup`}
-          className={img.cls}
-          src={img.src}
-          loading="lazy"
-          alt=""
-          aria-hidden="true"
-        />
-      ))}
+    <div className="overflow-hidden rounded-[14px] bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.1),0_1px_3px_rgba(0,0,0,0.15),0_18px_50px_rgba(0,0,0,0.08)]">
+      <div className="flex h-10 items-center gap-1.5 border-b border-[#e0ddd8] bg-[#f7f6f4] px-4">
+        <span className="size-2 rounded-full bg-[#d3d5db]" />
+        <span className="size-2 rounded-full bg-[#d3d5db]" />
+        <span className="size-2 rounded-full bg-[#d3d5db]" />
+      </div>
+      <img
+        className="block h-auto w-full bg-[#ececec]"
+        src={src}
+        width="1171"
+        height="927"
+        loading={priority ? "eager" : "lazy"}
+        decoding="async"
+        fetchPriority={priority ? "high" : "auto"}
+        alt={alt}
+      />
     </div>
   )
 }
 
 export function Showcase() {
   return (
-    <section id="prompt-to-output" className="bg-white py-12 md:pb-[90px] md:pt-20">
-      <div className="mx-auto w-full max-w-[1240px] px-4 md:px-[50px]">
-        <h2 className="text-center text-[clamp(28px,6vw,48px)] font-medium leading-[1.2] text-[#131316]">
-          From sign-up to check-in.
-        </h2>
-        <div
-          className="relative mx-auto mb-10 mt-7 flex h-[52px] w-full items-center justify-between md:w-3/5"
-          aria-label="From lead to member"
-        >
-          <div className="pointer-events-none absolute left-[170px] right-[170px] top-1/2 h-px bg-[#e0ddd8]" />
-          <span className="relative z-[1] inline-flex h-full w-40 items-center justify-center rounded-full bg-[#f3f2f0] text-[17px] font-medium text-[#131316]">
-            Lead
-          </span>
-          <span className="relative z-[1] inline-flex h-full w-40 items-center justify-center rounded-full bg-[linear-gradient(90deg,#fcb53a_0%,#f5a6c2_52%,#d9b8ea_100%)] text-[17px] font-medium text-[#131316] shadow-[inset_0_0_0_1px_rgba(0,0,0,0.04)]">
-            Member
-          </span>
+    <section
+      id="prompt-to-output"
+      className="overflow-hidden bg-white py-14 md:py-20"
+      aria-labelledby="product-showcase-title"
+    >
+      <div className="mx-auto w-full max-w-[1240px] px-5 md:px-[50px]">
+        <div className="mx-auto max-w-[720px] text-center">
+          <p className="text-sm font-medium text-[#71757e]">Your operation, in focus</p>
+          <h2
+            id="product-showcase-title"
+            className="mt-3 text-[clamp(32px,6vw,48px)] font-medium leading-[1.2] text-[#131316]"
+          >
+            The whole gym, at a glance.
+          </h2>
+          <p className="mx-auto mt-4 max-w-[600px] text-[clamp(1rem,1.3vw,1.12rem)] leading-relaxed text-[#5f6470]">
+            Turn daily activity into a clear view of revenue, members, and
+            schedules—so every decision starts with the full picture.
+          </p>
         </div>
-        <div className="relative mt-2 overflow-hidden rounded-[24px] bg-[#fafafa] pb-24">
-          <div className="dot-grid flex flex-col gap-4 overflow-hidden rounded-[20px] p-[22px]">
-            <MarqueeRow items={rowTop} direction="left" />
-            <MarqueeRow items={rowBottom} direction="right" />
-          </div>
+
+        <article className="relative mt-10 overflow-hidden rounded-[24px] bg-[#f3f2f0] p-3 md:mt-14 md:p-7">
           <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-[230px] bg-[linear-gradient(180deg,rgba(250,250,250,0)_0%,#fafafa_80%)]"
+            className="pointer-events-none absolute inset-x-[15%] top-0 h-56 bg-[radial-gradient(circle_at_top,#fc8c04_0%,rgba(252,140,4,0)_72%)] opacity-30 blur-[50px]"
             aria-hidden="true"
           />
-          <div className="absolute bottom-7 left-1/2 z-[2] -translate-x-1/2">
-            <a className="mfy-btn mfy-btn--primary" href="/demo">
-              See Migios in action
-            </a>
+          <div className="relative">
+            <ProductFrame
+              src="/images/product/dashboard-annual-overview.jpg"
+              alt="Migios annual dashboard showing 2026 revenue, visit, and new-member metrics with performance charts"
+              priority
+            />
           </div>
+          <div className="relative flex flex-col gap-3 px-2 pb-3 pt-6 md:flex-row md:items-end md:justify-between md:px-3 md:pb-2 md:pt-7">
+            <div>
+              <p className="text-sm font-medium text-[#71757e]">Annual overview</p>
+              <h3 className="mt-1 text-[1.2rem] font-medium text-[#131316]">
+                Lead with the numbers that matter
+              </h3>
+            </div>
+            <p className="max-w-[500px] text-[0.95rem] leading-relaxed text-[#5f6470] md:text-right">
+              Revenue, visits, new members, and sales composition come together
+              in one decision-ready dashboard.
+            </p>
+          </div>
+        </article>
+
+        <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
+          {stories.map((story) => (
+            <article
+              key={story.src}
+              className="flex flex-col overflow-hidden rounded-[20px] bg-[#f7f6f4] p-3"
+            >
+              <ProductFrame src={story.src} alt={story.alt} />
+              <div className="flex flex-1 flex-col px-2 pb-3 pt-6">
+                <p className="text-sm font-medium text-[#71757e]">{story.label}</p>
+                <h3 className="mt-1.5 text-[1.05rem] font-medium tracking-[-0.01em] text-[#131316]">
+                  {story.title}
+                </h3>
+                <p className="mt-2 text-[0.92rem] leading-[1.5] text-[#5f6470]">
+                  {story.body}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a className="mfy-btn mfy-btn--primary" href="/demo">
+            See Migios in action
+          </a>
         </div>
       </div>
     </section>

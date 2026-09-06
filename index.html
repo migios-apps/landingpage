@@ -8,6 +8,16 @@
       name="description"
       content="Migios brings memberships, class schedules, billing, and access control for all your gym locations into one dashboard, ready to set up, scale, and grow."
     />
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches),
+      )
+      document.documentElement.style.colorScheme =
+        document.documentElement.classList.contains("dark") ? "dark" : "light"
+    </script>
     <link rel="icon" type="image/svg+xml" href="/images/migios-icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

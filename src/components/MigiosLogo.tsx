@@ -30,7 +30,7 @@ export function MigiosLogo({ className = "h-8" }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <MigiosMark className="h-full" />
-      <span className="text-[1.35em] font-semibold leading-none tracking-[-0.02em] text-[#131316]">
+      <span className="text-[1.35em] font-semibold leading-none tracking-[-0.02em] text-[#131316] dark:text-white">
         migios
       </span>
     </span>
