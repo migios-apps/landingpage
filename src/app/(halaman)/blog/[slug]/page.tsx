@@ -1,37 +1,31 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { ArrowRight, Check, Lightbulb } from "lucide-react";
+import type { Metadata } from "next"
+import Image from "next/image"
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { ArrowRight, Check, Lightbulb } from "lucide-react"
 
-import { PostCard } from "@/components/blog/post-card";
-import { ShareButtons } from "@/components/blog/share-buttons";
-import { TocNav } from "@/components/site/toc-nav";
-import { categoryLabel, postDate, posts } from "@/lib/blog";
-import { siteName, siteUrl } from "@/lib/site";
+import { PostCard } from "@/components/blog/post-card"
+import { ShareButtons } from "@/components/blog/share-buttons"
+import { TocNav } from "@/components/site/toc-nav"
+import { categoryLabel, postDate, posts } from "@/lib/blog"
+import { siteName, siteUrl } from "@/lib/site"
 
-const findPost = (slug: string) =>
-  posts.find((post) => post.slug === slug && post.body);
+const findPost = (slug: string) => posts.find((post) => post.slug === slug && post.body)
 
 // Articles are prerendered from generateStaticParams. The page reads params outside Suspense on purpose,
 // so an unknown slug answers with a real 404 status instead of streaming the not-found UI after a 200.
-export const instant = false;
+export const instant = false
 
 export function generateStaticParams() {
-  return posts.filter((post) => post.body).map((post) => ({ slug: post.slug }));
+  return posts.filter((post) => post.body).map((post) => ({ slug: post.slug }))
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/blog/[slug]">): Promise<Metadata> {
-  const post = findPost((await params).slug);
-  if (!post) return {};
+export async function generateMetadata({ params }: PageProps<"/blog/[slug]">): Promise<Metadata> {
+  const post = findPost((await params).slug)
+  if (!post) return {}
 
-  const path = `/blog/${post.slug}`;
-  const image =
-    post.cover.kind === "photo"
-      ? [{ url: post.cover.src, alt: post.cover.alt }]
-      : undefined;
+  const path = `/blog/${post.slug}`
+  const image = post.cover.kind === "photo" ? [{ url: post.cover.src, alt: post.cover.alt }] : undefined
   return {
     title: post.title,
     description: post.excerpt,
@@ -54,30 +48,25 @@ export async function generateMetadata({
       description: post.excerpt,
       images: image,
     },
-  };
+  }
 }
 
-const paragraph =
-  "text-base leading-[1.75] text-neutral-800 md:text-[17px] dark:text-neutral-300";
+const paragraph = "text-base leading-[1.75] text-neutral-800 md:text-[17px] dark:text-neutral-300"
 
-export default async function BlogArticlePage({
-  params,
-}: PageProps<"/blog/[slug]">) {
-  const post = findPost((await params).slug);
-  if (!post?.body) notFound();
+export default async function BlogArticlePage({ params }: PageProps<"/blog/[slug]">) {
+  const post = findPost((await params).slug)
+  if (!post?.body) notFound()
 
-  const url = `${siteUrl}/blog/${post.slug}`;
-  const headings = post.body.flatMap((block) =>
-    block.type === "heading" ? [{ id: block.id, label: block.text }] : [],
-  );
+  const url = `${siteUrl}/blog/${post.slug}`
+  const headings = post.body.flatMap((block) => (block.type === "heading" ? [{ id: block.id, label: block.text }] : []))
   // Hand-picked related posts first; otherwise other posts from the same category, then the newest ones.
-  const others = posts.filter((item) => item.slug !== post.slug);
+  const others = posts.filter((item) => item.slug !== post.slug)
   const related = post.related
     ? post.related.flatMap((slug) => posts.filter((item) => item.slug === slug))
     : [
         ...others.filter((item) => item.category === post.category),
         ...others.filter((item) => item.category !== post.category),
-      ].slice(0, 3);
+      ].slice(0, 3)
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -86,10 +75,7 @@ export default async function BlogArticlePage({
         "@type": "BlogPosting",
         headline: post.title,
         description: post.excerpt,
-        image:
-          post.cover.kind === "photo"
-            ? `${siteUrl}${post.cover.src}`
-            : undefined,
+        image: post.cover.kind === "photo" ? `${siteUrl}${post.cover.src}` : undefined,
         datePublished: post.date,
         inLanguage: "id-ID",
         articleSection: categoryLabel(post.category),
@@ -111,7 +97,7 @@ export default async function BlogArticlePage({
         ],
       },
     ],
-  };
+  }
 
   return (
     <>
@@ -124,21 +110,12 @@ export default async function BlogArticlePage({
       <section className="bg-background">
         <div className="mx-auto max-w-[1200px] px-4 py-8 md:px-8 lg:py-14">
           <header className="mx-auto flex max-w-[1040px] flex-col gap-[18px]">
-            <nav
-              aria-label="Breadcrumb"
-              className="flex items-center gap-2 text-[13px] text-subtle"
-            >
-              <Link
-                href="/blog"
-                className="transition-colors hover:text-foreground"
-              >
+            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[13px] text-subtle">
+              <Link href="/blog" className="transition-colors hover:text-foreground">
                 Blog
               </Link>
               <span aria-hidden>/</span>
-              <Link
-                href={`/blog?kategori=${post.category}`}
-                className="font-semibold text-link"
-              >
+              <Link href={`/blog?kategori=${post.category}`} className="font-semibold text-link">
                 {categoryLabel(post.category)}
               </Link>
             </nav>
@@ -162,10 +139,8 @@ export default async function BlogArticlePage({
               <div>
                 <p className="text-sm font-semibold">{post.author}</p>
                 <p className="text-[12.5px] text-subtle">
-                  <time dateTime={post.date}>
-                    {postDate.format(new Date(post.date))}
-                  </time>{" "}
-                  · {post.readMinutes} menit baca
+                  <time dateTime={post.date}>{postDate.format(new Date(post.date))}</time> · {post.readMinutes} menit
+                  baca
                 </p>
               </div>
             </div>
@@ -208,30 +183,24 @@ export default async function BlogArticlePage({
                       >
                         {block.text}
                       </h2>
-                    );
+                    )
                   case "paragraph":
                     return (
                       <p key={i} className={paragraph}>
                         {block.text}
                       </p>
-                    );
+                    )
                   case "list":
                     return (
                       <ul key={i} className="flex flex-col gap-2">
                         {block.items.map((item) => (
-                          <li
-                            key={item}
-                            className={`flex gap-2.5 ${paragraph} leading-[1.65]`}
-                          >
-                            <Check
-                              className="mt-1 size-4 shrink-0 text-brand"
-                              aria-hidden
-                            />
+                          <li key={item} className={`flex gap-2.5 ${paragraph} leading-[1.65]`}>
+                            <Check className="mt-1 size-4 shrink-0 text-brand" aria-hidden />
                             <span>{item}</span>
                           </li>
                         ))}
                       </ul>
-                    );
+                    )
                   case "figure":
                     return (
                       <figure key={i} className="mt-2">
@@ -251,11 +220,9 @@ export default async function BlogArticlePage({
                             className="hidden object-cover object-left-top dark:block"
                           />
                         </div>
-                        <figcaption className="mt-2.5 text-[13px] text-subtle">
-                          {block.caption}
-                        </figcaption>
+                        <figcaption className="mt-2.5 text-[13px] text-subtle">{block.caption}</figcaption>
                       </figure>
-                    );
+                    )
                   case "tip":
                     return (
                       <aside
@@ -267,22 +234,18 @@ export default async function BlogArticlePage({
                         </span>
                         <div className="text-orange-900 dark:text-orange-200">
                           <p className="text-sm font-semibold">{block.title}</p>
-                          <p className="mt-1 text-[15px] leading-[1.6]">
-                            {block.text}
-                          </p>
+                          <p className="mt-1 text-[15px] leading-[1.6]">{block.text}</p>
                         </div>
                       </aside>
-                    );
+                    )
                 }
               })}
             </article>
 
-            <aside className="sticky top-6 hidden w-60 shrink-0 flex-col gap-6 lg:flex">
+            <aside className="sticky top-[100px] hidden w-60 shrink-0 flex-col gap-6 lg:flex">
               <TocNav title="Di artikel ini" items={headings} />
               <div>
-                <p className="font-mono text-[10px] tracking-[0.08em] text-subtle uppercase">
-                  Bagikan
-                </p>
+                <p className="font-mono text-[10px] tracking-[0.08em] text-subtle uppercase">Bagikan</p>
                 <ShareButtons url={url} title={post.title} />
               </div>
             </aside>
@@ -291,22 +254,13 @@ export default async function BlogArticlePage({
       </section>
 
       {related.length > 0 && (
-        <section
-          aria-labelledby="artikel-lainnya"
-          className="border-t border-line bg-frame"
-        >
+        <section aria-labelledby="artikel-lainnya" className="border-t border-line bg-frame">
           <div className="mx-auto max-w-[1200px] px-4 py-12 md:px-8 lg:py-20">
             <div className="flex items-baseline justify-between gap-4">
-              <h2
-                id="artikel-lainnya"
-                className="text-2xl font-[650] tracking-[-0.02em] md:text-[28px]"
-              >
+              <h2 id="artikel-lainnya" className="text-2xl font-[650] tracking-[-0.02em] md:text-[28px]">
                 Artikel lainnya
               </h2>
-              <Link
-                href="/blog"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-link"
-              >
+              <Link href="/blog" className="inline-flex items-center gap-1.5 text-sm font-semibold text-link">
                 Lihat semua
                 <ArrowRight className="size-3.5" aria-hidden />
               </Link>
@@ -320,5 +274,5 @@ export default async function BlogArticlePage({
         </section>
       )}
     </>
-  );
+  )
 }

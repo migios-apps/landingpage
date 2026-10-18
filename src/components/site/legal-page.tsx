@@ -39,7 +39,7 @@ export function LegalPage({ document }: { document: LegalDocument }) {
 
       <section className="bg-background">
         <div className="mx-auto flex max-w-[1200px] items-start gap-16 px-4 py-4 md:px-8 lg:py-8">
-          <aside className="sticky top-6 hidden w-[260px] shrink-0 lg:block">
+          <aside className="sticky top-[100px] hidden w-[260px] shrink-0 lg:block">
             <TocNav title="Daftar isi" items={tocItems} />
           </aside>
           <article className="flex max-w-[760px] min-w-0 flex-1 flex-col gap-6">

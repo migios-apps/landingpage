@@ -23,7 +23,7 @@ const links = [
 const outlinePill =
   "bg-card text-foreground shadow-[0_0_0_1px_var(--border),0_1px_2px_rgba(0,0,0,0.05)] dark:bg-card/60 dark:shadow-[inset_0_0_0_1px_var(--border)]"
 
-// Solid header for every page except the landing page, which keeps its transparent hero header.
+// Header for every page except the landing page. It stays pinned like the landing header does once scrolled.
 export function InnerHeader() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
@@ -32,7 +32,7 @@ export function InnerHeader() {
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`)
 
   return (
-    <header className="relative z-50 border-b border-line bg-background/90">
+    <header className="sticky top-0 z-50 border-b border-line bg-background/80 backdrop-blur-[10px]">
       <nav
         aria-label="Navigasi utama"
         className="mx-auto flex h-[68px] max-w-[1440px] items-center justify-between gap-6 px-4 md:h-[76px] md:px-8 lg:px-12"

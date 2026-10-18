@@ -1,4 +1,8 @@
+"use client"
+
+import { useRef } from "react"
 import Image from "next/image"
+import { motion, useReducedMotion, useScroll, useTransform } from "motion/react"
 import {
   Activity,
   Calendar,
@@ -55,6 +59,15 @@ const scheduleFeatures: { title: string; text: string; Icon: LucideIcon }[] = [
 ]
 
 export function Schedule() {
+  // The calendar rises from lying flat to upright as it scrolls in: flat when its top meets the bottom of
+  // the viewport, upright once its top reaches the upper third.
+  const calendarRef = useRef<HTMLDivElement>(null)
+  const reduceMotion = useReducedMotion()
+  const { scrollYProgress } = useScroll({ target: calendarRef, offset: ["start end", "start 0.35"] })
+  const rotateX = useTransform(scrollYProgress, [0, 1], [62, 0])
+  const scale = useTransform(scrollYProgress, [0, 1], [0.92, 1])
+  const opacity = useTransform(scrollYProgress, [0, 0.6], [0.4, 1])
+
   return (
     <section id="jadwal" aria-labelledby="jadwal-title" className="bg-background">
       <div className="mx-auto max-w-[1200px] px-4 py-16 md:px-8 md:py-[88px] lg:py-28">
@@ -67,35 +80,40 @@ export function Schedule() {
             Jadwal kelas dan sesi PT, rapi dalam satu kalender
           </h2>
           <p className="mt-4 max-w-[640px] text-[17px] leading-[1.55] text-pretty text-body">
-            Atur jadwal berulang, pantau bentrok coach, lalu tutup kelas dan sesi langsung dari kalender. Member
-            melihat jadwalnya sendiri dari aplikasi.
+            Atur jadwal berulang, pantau bentrok coach, lalu tutup kelas dan sesi langsung dari kalender. Member melihat
+            jadwalnya sendiri dari aplikasi.
           </p>
         </div>
 
         <div className="relative mt-14 md:pb-12 lg:pb-16">
-          <div className="relative overflow-hidden rounded-t-[6px] md:rounded-t-[16px]">
-            <Image
-              src="/images/jadwal-kalender.webp"
-              alt="Kalender jadwal Migios tampilan bulan: kelas dan sesi PT per hari, panel Jadwal Hari Ini, dan panel Perlu Perhatian berisi bentrok coach serta jadwal di luar jam buka"
-              width={2000}
-              height={1290}
-              quality={90}
-              sizes="(min-width: 1200px) 1136px, 100vw"
-              className="block h-auto w-full dark:hidden"
-            />
-            <Image
-              src="/images/jadwal-kalender-dark.webp"
-              alt="Kalender jadwal Migios tampilan bulan: kelas dan sesi PT per hari, panel Jadwal Hari Ini, dan panel Perlu Perhatian berisi bentrok coach serta jadwal di luar jam buka"
-              width={2000}
-              height={1290}
-              quality={90}
-              sizes="(min-width: 1200px) 1136px, 100vw"
-              className="hidden h-auto w-full dark:block"
-            />
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%] bg-linear-to-b from-background/0 to-background to-92%"
-            />
+          <div ref={calendarRef} className="[perspective:1800px]">
+            <motion.div
+              className="relative overflow-hidden rounded-t-[6px] md:rounded-t-[16px]"
+              style={reduceMotion ? undefined : { rotateX, scale, opacity, transformOrigin: "50% 100%" }}
+            >
+              <Image
+                src="/images/jadwal-kalender.webp"
+                alt="Kalender jadwal Migios tampilan bulan: kelas dan sesi PT per hari, panel Jadwal Hari Ini, dan panel Perlu Perhatian berisi bentrok coach serta jadwal di luar jam buka"
+                width={2000}
+                height={1290}
+                quality={90}
+                sizes="(min-width: 1200px) 1136px, 100vw"
+                className="block h-auto w-full dark:hidden"
+              />
+              <Image
+                src="/images/jadwal-kalender-dark.webp"
+                alt="Kalender jadwal Migios tampilan bulan: kelas dan sesi PT per hari, panel Jadwal Hari Ini, dan panel Perlu Perhatian berisi bentrok coach serta jadwal di luar jam buka"
+                width={2000}
+                height={1290}
+                quality={90}
+                sizes="(min-width: 1200px) 1136px, 100vw"
+                className="hidden h-auto w-full dark:block"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%] bg-linear-to-b from-background/0 to-background to-92%"
+              />
+            </motion.div>
           </div>
           <div className="relative z-[3] mx-auto mt-8 w-[230px] md:absolute md:bottom-0 md:left-[-8px] md:mx-0 md:mt-0 md:w-[170px] lg:left-[-24px] lg:w-[250px]">
             <div className="rounded-[38px] bg-[#0a0a0a] p-[7px] shadow-[0_0_0_1px_rgba(0,0,0,0.25),0_30px_60px_-18px_rgba(0,0,0,0.5)] dark:shadow-[0_0_0_1px_rgba(255,255,255,0.14),0_30px_60px_-18px_rgba(0,0,0,0.7)]">

@@ -46,7 +46,7 @@ export default function PricingPage() {
                 <col />
                 <col />
               </colgroup>
-              <thead className="sticky top-0 z-10 bg-card">
+              <thead className="sticky top-[68px] z-10 bg-card md:top-[76px]">
                 <tr>
                   <td />
                   {plans.map((plan) => (

@@ -1,16 +1,16 @@
-import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
 
-import { Providers } from "@/components/providers";
-import { siteDescription, siteName, siteTitle, siteUrl } from "@/lib/site";
+import { Providers } from "@/components/providers"
+import { siteDescription, siteName, siteTitle, siteUrl } from "@/lib/site"
 
-import "./globals.css";
+import "./globals.css"
 
-const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
+const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] })
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -59,11 +59,11 @@ export const metadata: Metadata = {
     },
   },
   formatDetection: { telephone: false, email: false, address: false },
-};
+}
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
-};
+}
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -78,5 +78,5 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Providers>{children}</Providers>
       </body>
     </html>
-  );
+  )
 }

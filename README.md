@@ -29,8 +29,8 @@ Halaman tersedia di http://localhost:3000.
 
 - Metadata lengkap di `src/app/layout.tsx`: title template, description, keywords, canonical, Open Graph, Twitter card, robots.
 - Structured data JSON-LD di `src/app/page.tsx`: Organization, WebSite, SoftwareApplication (dengan harga paket), dan FAQPage.
-- `sitemap.xml`, `robots.txt`, dan web manifest dari `src/app/sitemap.ts`, `robots.ts`, `manifest.ts`.
-- Gambar Open Graph dibuat otomatis oleh `src/app/opengraph-image.tsx`. Favicon, `icon.png`, `apple-icon.png`, dan ikon manifest memakai logo putih yang sama dengan backoffice; logo oranye `public/images/migios-logo-512.png` dipakai untuk structured data.
+- `sitemap.xml` dan `robots.txt` dari `src/app/sitemap.ts` dan `robots.ts`. Situs ini sengaja tidak memakai web manifest/PWA.
+- Gambar Open Graph dibuat otomatis oleh `src/app/opengraph-image.tsx`. Favicon, `icon.png`, dan `apple-icon.png` memakai logo putih yang sama dengan backoffice; logo oranye `public/images/migios-logo-512.png` dipakai untuk structured data.
 - Halaman dirender statis: satu `h1`, heading per section, alt text di semua gambar, dan `lang="id"`.
 
 ## Halaman
