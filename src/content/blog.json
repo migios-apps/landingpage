@@ -1,0 +1,1053 @@
+{
+  "categories": [
+    {
+      "slug": "operasional",
+      "label": "Operasional"
+    },
+    {
+      "slug": "membership",
+      "label": "Membership"
+    },
+    {
+      "slug": "keuangan",
+      "label": "Keuangan"
+    },
+    {
+      "slug": "pemasaran",
+      "label": "Pemasaran"
+    },
+    {
+      "slug": "pembaruan-produk",
+      "label": "Pembaruan produk"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "laporan-ekspor-per-tab",
+      "title": "Pembaruan: ekspor laporan per tab ke PDF, Excel, dan CSV",
+      "excerpt": "Setiap tab laporan keuangan, penjualan, paket, produk, member, dan karyawan kini bisa diunduh sendiri-sendiri.",
+      "category": "pembaruan-produk",
+      "author": "Tim Migios",
+      "date": "2026-10-18",
+      "readMinutes": 3,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/dashboard.webp",
+        "darkSrc": "/images/dashboard-dark.webp",
+        "alt": "Dashboard Migios dengan pendapatan dan member aktif",
+        "position": "left top"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Laporan Migios sekarang bisa diekspor per tab, jadi kamu cukup mengunduh bagian yang dibutuhkan."
+        },
+        {
+          "type": "heading",
+          "id": "apa-yang-berubah",
+          "text": "Apa yang berubah"
+        },
+        {
+          "type": "paragraph",
+          "text": "Setiap tab di laporan keuangan, penjualan, paket, produk, member, dan karyawan punya tombol ekspor sendiri."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Format PDF untuk dicetak atau dikirim.",
+            "Format Excel untuk diolah lebih lanjut.",
+            "Format CSV untuk diimpor ke aplikasi lain."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Hak akses ekspor bisa diatur per peran, jadi tidak semua staf bisa mengunduh laporan."
+        },
+        {
+          "type": "heading",
+          "id": "cara-memakainya",
+          "text": "Cara memakainya"
+        },
+        {
+          "type": "paragraph",
+          "text": "Buka laporan, pilih tab dan periode, lalu tekan Ekspor dan pilih formatnya."
+        }
+      ]
+    },
+    {
+      "slug": "mengurangi-member-berhenti-3-bulan-pertama",
+      "title": "Cara mengurangi member yang berhenti di 3 bulan pertama",
+      "excerpt": "Tiga bulan pertama menentukan apakah member bertahan. Ini empat kebiasaan yang membantu member baru tetap datang.",
+      "category": "membership",
+      "author": "Tim Migios",
+      "date": "2026-10-16",
+      "readMinutes": 8,
+      "featured": true,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/hero-gym-floor-full.webp",
+        "darkSrc": "/images/hero-gym-floor-full-dark.webp",
+        "alt": "Area latihan gym yang terang dengan treadmill, bangku, dan rak beban",
+        "position": "center"
+      },
+      "related": [
+        "absensi-wajah-vs-qr-code",
+        "jadwal-kelas-tidak-bentrok-antar-coach",
+        "aturan-freeze-paket"
+      ],
+      "body": [
+        {
+          "type": "heading",
+          "id": "kenapa-3-bulan-pertama-penting",
+          "text": "Kenapa 3 bulan pertama penting"
+        },
+        {
+          "type": "paragraph",
+          "text": "Member baru datang dengan semangat tinggi, tapi kebiasaan belum terbentuk. Kalau dalam beberapa minggu pertama mereka jarang datang, kemungkinan besar paketnya tidak diperpanjang. Karena itu fokus retensi sebaiknya dimulai sejak hari pertama, bukan saat paket hampir habis."
+        },
+        {
+          "type": "heading",
+          "id": "sambut-member-di-minggu-pertama",
+          "text": "Sambut member di minggu pertama"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pastikan member baru tahu jadwal kelas, cara check-in, dan siapa yang bisa ditanya. Hal kecil seperti tur singkat atau sesi pengenalan alat membuat member merasa diterima."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tunjukkan cara check-in dengan QR code atau wajah.",
+            "Bantu member memasang aplikasi dan melihat jadwal kelas.",
+            "Tawarkan satu sesi bersama coach di minggu pertama."
+          ]
+        },
+        {
+          "type": "heading",
+          "id": "pantau-kunjungan-bukan-hanya-pembayaran",
+          "text": "Pantau kunjungan, bukan hanya pembayaran"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pembayaran lunas belum tentu berarti member aktif. Lihat data kunjungan: member yang check-in kurang dari sekali seminggu di bulan pertama perlu disapa lebih dulu."
+        },
+        {
+          "type": "figure",
+          "src": "/images/dashboard.webp",
+          "darkSrc": "/images/dashboard-dark.webp",
+          "alt": "Dashboard Migios: pendapatan, member aktif, kunjungan, tren pendapatan, dan performa coach",
+          "caption": "Dashboard menampilkan member aktif, kunjungan, dan member baru per periode."
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Kirim pengingat lewat WhatsApp saat member belum datang 7 hari. Pesan singkat dari staf yang mereka kenal jauh lebih efektif daripada promo."
+        },
+        {
+          "type": "heading",
+          "id": "hubungkan-member-dengan-coach",
+          "text": "Hubungkan member dengan coach"
+        },
+        {
+          "type": "paragraph",
+          "text": "Member yang punya coach atau ikut kelas rutin cenderung bertahan lebih lama. Tawarkan paket PT atau kelas yang sesuai tujuan mereka, lalu pastikan coach mencatat setiap sesi."
+        },
+        {
+          "type": "heading",
+          "id": "ingatkan-sebelum-paket-habis",
+          "text": "Ingatkan sebelum paket habis"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ingatkan member beberapa hari sebelum paket berakhir, sertakan pilihan perpanjangan, dan bila perlu tawarkan freeze untuk member yang sedang berhalangan. Member yang diberi pilihan lebih jarang berhenti."
+        }
+      ]
+    },
+    {
+      "slug": "konten-aplikasi-member",
+      "title": "Pembaruan: promo, artikel, dan susunan beranda di aplikasi member",
+      "excerpt": "Klub bisa menampilkan promo yang langsung bisa dipesan, artikel, dan jam ramai di beranda aplikasi member.",
+      "category": "pembaruan-produk",
+      "author": "Tim Migios",
+      "date": "2026-10-14",
+      "readMinutes": 4,
+      "cover": {
+        "kind": "phone"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Beranda aplikasi member kini bisa diatur klub: tampilkan promo, artikel, dan informasi jam ramai."
+        },
+        {
+          "type": "heading",
+          "id": "yang-bisa-ditampilkan",
+          "text": "Yang bisa ditampilkan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Klub dapat menyusun beranda sesuai kebutuhan member."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Promo paket atau produk yang langsung bisa dipesan.",
+            "Artikel tips latihan atau informasi klub.",
+            "Jam ramai supaya member bisa memilih waktu yang lebih lengang."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Konten dari kantor pusat bisa dibagikan ke semua cabang sekaligus."
+        },
+        {
+          "type": "heading",
+          "id": "mulai-mengatur",
+          "text": "Mulai mengatur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Buka pengaturan aplikasi member, pilih bagian beranda, lalu atur urutan dan isi kontennya."
+        }
+      ]
+    },
+    {
+      "slug": "batas-klien-per-coach",
+      "title": "Pembaruan: batas klien PT untuk setiap coach",
+      "excerpt": "Atur kapasitas klien per coach supaya jadwal PT tidak menumpuk pada satu orang.",
+      "category": "pembaruan-produk",
+      "author": "Tim Migios",
+      "date": "2026-10-12",
+      "readMinutes": 3,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/jadwal-kalender.webp",
+        "darkSrc": "/images/jadwal-kalender-dark.webp",
+        "alt": "Kalender jadwal kelas Migios per minggu",
+        "position": "left top"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Coach yang memegang terlalu banyak klien PT sulit memberi perhatian yang cukup. Sekarang setiap coach bisa diberi batas klien."
+        },
+        {
+          "type": "heading",
+          "id": "cara-kerjanya",
+          "text": "Cara kerjanya"
+        },
+        {
+          "type": "paragraph",
+          "text": "Saat batas tercapai, member baru tidak bisa di-assign ke coach tersebut sampai ada slot kosong."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Atur kapasitas klien di profil coach.",
+            "Lihat sisa slot saat meng-assign member.",
+            "Pantau beban coach dari laporan."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Gunakan batas ini bersama jadwal PT agar beban kerja coach tetap seimbang."
+        },
+        {
+          "type": "heading",
+          "id": "siapa-yang-bisa-mengatur",
+          "text": "Siapa yang bisa mengatur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pemilik klub dan staf dengan hak akses pengaturan coach dapat mengubah batas klien."
+        }
+      ]
+    },
+    {
+      "slug": "absensi-wajah-vs-qr-code",
+      "title": "Absensi wajah vs QR code: mana yang cocok untuk gym kamu?",
+      "excerpt": "Bandingkan kecepatan, keamanan, dan kebutuhan perangkat dari dua cara check-in yang paling sering dipakai klub.",
+      "category": "operasional",
+      "author": "Tim Migios",
+      "date": "2026-10-09",
+      "readMinutes": 6,
+      "cover": {
+        "kind": "face"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "QR code dan absensi wajah sama-sama mempercepat check-in, tapi cocok untuk kondisi klub yang berbeda. Pilihan yang tepat bergantung pada jumlah member, perangkat di meja depan, dan seberapa ketat klub ingin mencegah titip absen."
+        },
+        {
+          "type": "heading",
+          "id": "kapan-qr-code-sudah-cukup",
+          "text": "Kapan QR code sudah cukup"
+        },
+        {
+          "type": "paragraph",
+          "text": "QR code paling mudah dimulai: member cukup menunjukkan kode dari aplikasi dan staf atau tablet memindainya. Cocok untuk klub yang baru beralih dari buku absen."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tidak butuh perangkat khusus selain kamera atau tablet.",
+            "Member yang belum memasang aplikasi tetap bisa memakai kartu.",
+            "Cepat diterapkan di beberapa cabang sekaligus."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Kalau sering terjadi titip absen atau kartu dipinjamkan, pertimbangkan absensi wajah untuk jam ramai."
+        },
+        {
+          "type": "heading",
+          "id": "kapan-beralih-ke-absensi-wajah",
+          "text": "Kapan beralih ke absensi wajah"
+        },
+        {
+          "type": "paragraph",
+          "text": "Absensi wajah membuat check-in tidak bisa diwakilkan. Data wajah tersimpan dengan aman dan paket aktif member langsung dicek saat wajah dikenali, jadi resepsionis cukup memantau."
+        }
+      ]
+    },
+    {
+      "slug": "jadwal-kelas-tidak-bentrok-antar-coach",
+      "title": "Menyusun jadwal kelas yang tidak bentrok antar coach",
+      "excerpt": "Langkah praktis membuat jadwal berulang, membagi kuota peserta, dan mencegah satu coach mengajar di dua tempat.",
+      "category": "operasional",
+      "author": "Tim Migios",
+      "date": "2026-10-02",
+      "readMinutes": 5,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/jadwal-kalender.webp",
+        "darkSrc": "/images/jadwal-kalender-dark.webp",
+        "alt": "Kalender jadwal kelas Migios per minggu",
+        "position": "left top"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Jadwal yang bentrok membuat coach kelelahan dan member kecewa. Dengan aturan sederhana, jadwal kelas berulang bisa disusun tanpa harus dicek manual setiap minggu."
+        },
+        {
+          "type": "heading",
+          "id": "mulai-dari-jadwal-berulang",
+          "text": "Mulai dari jadwal berulang"
+        },
+        {
+          "type": "paragraph",
+          "text": "Buat pola mingguan untuk kelas yang rutin, lalu tetapkan coach, ruangan, dan kuota peserta sekali saja."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tentukan kuota per kelas sesuai kapasitas ruangan.",
+            "Pastikan satu coach tidak dijadwalkan di dua kelas pada jam yang sama.",
+            "Sisakan jeda antar kelas untuk persiapan alat."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Tandai kelas yang sering penuh supaya kamu bisa menambah jadwal baru sebelum member mulai mengeluh."
+        },
+        {
+          "type": "heading",
+          "id": "pantau-bentrok-dari-satu-kalender",
+          "text": "Pantau bentrok dari satu kalender"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kalender jadwal menampilkan kelas dan sesi PT per hari, termasuk peringatan saat coach bentrok atau jadwal berada di luar jam buka klub."
+        }
+      ]
+    },
+    {
+      "slug": "membaca-laporan-keuangan-gym",
+      "title": "Membaca laporan keuangan gym dalam 10 menit",
+      "excerpt": "Angka mana yang perlu dicek tiap minggu: pendapatan per paket, piutang, refund, dan komisi coach.",
+      "category": "keuangan",
+      "author": "Tim Migios",
+      "date": "2026-09-26",
+      "readMinutes": 7,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/dashboard.webp",
+        "darkSrc": "/images/dashboard-dark.webp",
+        "alt": "Dashboard Migios dengan pendapatan dan member aktif",
+        "position": "left top"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Laporan keuangan tidak harus dibaca berjam-jam. Ada beberapa angka yang cukup dicek setiap minggu untuk tahu apakah klub sehat."
+        },
+        {
+          "type": "heading",
+          "id": "angka-yang-perlu-dicek-mingguan",
+          "text": "Angka yang perlu dicek mingguan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fokus pada angka yang paling cepat berubah dan paling berpengaruh ke kas klub."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pendapatan per jenis paket dan produk.",
+            "Piutang dari pembayaran sebagian yang belum lunas.",
+            "Refund, diskon, dan komisi coach yang harus dibayar."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Bandingkan angka minggu ini dengan minggu lalu, bukan hanya melihat totalnya."
+        },
+        {
+          "type": "heading",
+          "id": "ekspor-saat-perlu-dibagikan",
+          "text": "Ekspor saat perlu dibagikan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Setiap tab laporan bisa diunduh ke PDF, Excel, atau CSV untuk dibagikan ke pemilik atau akuntan."
+        }
+      ]
+    },
+    {
+      "slug": "aturan-freeze-paket",
+      "title": "Freeze paket: kapan diberikan dan bagaimana aturannya",
+      "excerpt": "Atur biaya, jarak pengajuan, dan kuota freeze supaya member tetap loyal tanpa merugikan klub.",
+      "category": "membership",
+      "author": "Tim Migios",
+      "date": "2026-09-19",
+      "readMinutes": 4,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/gym-floor-cardio.webp",
+        "darkSrc": "/images/gym-floor-cardio-dark.webp",
+        "alt": "Deretan alat kardio di area gym dengan jendela besar",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Freeze paket membantu member yang sedang sakit, bepergian, atau sibuk, tanpa harus berhenti berlangganan. Supaya tidak disalahgunakan, aturannya perlu jelas sejak awal."
+        },
+        {
+          "type": "heading",
+          "id": "tentukan-aturan-freeze",
+          "text": "Tentukan aturan freeze"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aturan yang jelas membuat staf tidak perlu memutuskan kasus satu per satu."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Biaya freeze, jika ada.",
+            "Jarak minimal antar pengajuan freeze.",
+            "Kuota freeze per tahun atau per paket."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Tulis aturan freeze di halaman paket agar member tahu sebelum membeli."
+        },
+        {
+          "type": "heading",
+          "id": "hitung-masa-aktif-dengan-benar",
+          "text": "Hitung masa aktif dengan benar"
+        },
+        {
+          "type": "paragraph",
+          "text": "Selama freeze, masa aktif paket ikut bergeser sesuai jumlah hari yang dibekukan, sehingga member tidak kehilangan haknya."
+        }
+      ]
+    },
+    {
+      "slug": "self-order-paket-dari-aplikasi",
+      "title": "Self-order dari aplikasi: biarkan member membeli paket sendiri",
+      "excerpt": "Kurangi antrean di kasir dengan katalog paket, voucher, dan pembayaran online langsung dari aplikasi member.",
+      "category": "pemasaran",
+      "author": "Tim Migios",
+      "date": "2026-09-12",
+      "readMinutes": 5,
+      "cover": {
+        "kind": "phone"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Antrean di kasir sering terjadi saat member ingin memperpanjang paket di jam ramai. Self-order memindahkan transaksi itu ke aplikasi member."
+        },
+        {
+          "type": "heading",
+          "id": "siapkan-katalog-yang-bisa-dipesan",
+          "text": "Siapkan katalog yang bisa dipesan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pilih paket dan produk yang boleh dibeli sendiri oleh member, lengkap dengan harga dan masa berlakunya."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Aktifkan self-order untuk paket yang paling sering diperpanjang.",
+            "Izinkan voucher dan poin dipakai di keranjang.",
+            "Hubungkan payment gateway agar pembayaran online langsung tercatat."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Promosikan self-order lewat pengingat sebelum paket berakhir."
+        },
+        {
+          "type": "heading",
+          "id": "order-langsung-masuk-ke-kasir",
+          "text": "Order langsung masuk ke kasir"
+        },
+        {
+          "type": "paragraph",
+          "text": "Setelah dibayar, order muncul di kasir klub dan paket aktif di aplikasi member tanpa input ulang oleh staf."
+        }
+      ]
+    },
+    {
+      "slug": "mengelola-beberapa-cabang",
+      "title": "Mengelola beberapa cabang tanpa spreadsheet",
+      "excerpt": "Satu akun untuk semua cabang: pantau member aktif, pendapatan, dan stok per lokasi dari satu dashboard.",
+      "category": "operasional",
+      "author": "Tim Migios",
+      "date": "2026-09-05",
+      "readMinutes": 6,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/gym-floor-sunlight.webp",
+        "darkSrc": "/images/gym-floor-sunlight-dark.webp",
+        "alt": "Area gym luas dengan treadmill dan sepeda statis di bawah sinar matahari",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Saat klub bertambah cabang, spreadsheet terpisah per lokasi cepat menjadi tidak sinkron. Satu akun untuk semua cabang membuat data tetap rapi."
+        },
+        {
+          "type": "heading",
+          "id": "satu-data-banyak-lokasi",
+          "text": "Satu data, banyak lokasi"
+        },
+        {
+          "type": "paragraph",
+          "text": "Kelola paket, produk, dan staf per cabang dari satu akun perusahaan."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Pantau member aktif per cabang.",
+            "Bandingkan pendapatan antar lokasi.",
+            "Atur apakah member boleh check-in di cabang lain."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Salin data paket dan produk dari cabang utama saat membuka cabang baru."
+        },
+        {
+          "type": "heading",
+          "id": "laporan-per-cabang",
+          "text": "Laporan per cabang"
+        },
+        {
+          "type": "paragraph",
+          "text": "Laporan bisa difilter per cabang atau digabung untuk melihat kinerja seluruh bisnis."
+        }
+      ]
+    },
+    {
+      "slug": "harga-paket-membership",
+      "title": "Menentukan harga paket membership yang tetap menguntungkan",
+      "excerpt": "Hitung biaya per member, bandingkan paket bulanan dan tahunan, lalu tentukan harga yang masuk akal.",
+      "category": "keuangan",
+      "author": "Tim Migios",
+      "date": "2026-08-29",
+      "readMinutes": 7,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/hero-gym-floor-full.webp",
+        "darkSrc": "/images/hero-gym-floor-full-dark.webp",
+        "alt": "Area latihan gym yang terang dengan treadmill, bangku, dan rak beban",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Harga paket yang terlalu murah menggerus margin, sedangkan yang terlalu mahal membuat calon member ragu. Hitung dulu sebelum menentukan angka."
+        },
+        {
+          "type": "heading",
+          "id": "hitung-biaya-per-member",
+          "text": "Hitung biaya per member"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mulai dari biaya tetap bulanan klub, lalu bagi dengan jumlah member aktif yang realistis."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Sewa tempat, listrik, dan perawatan alat.",
+            "Gaji staf dan komisi coach.",
+            "Biaya pemasaran dan software."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Tawarkan paket 6 bulan dan tahunan dengan potongan agar arus kas lebih stabil."
+        },
+        {
+          "type": "heading",
+          "id": "uji-dan-evaluasi",
+          "text": "Uji dan evaluasi"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pantau paket mana yang paling banyak dibeli dan diperpanjang, lalu sesuaikan harga secara berkala."
+        }
+      ]
+    },
+    {
+      "slug": "komisi-coach-adil",
+      "title": "Mengatur komisi coach agar adil dan transparan",
+      "excerpt": "Pilih dasar komisi dari paket, kelas, atau produk, dan pastikan coach bisa melihat perhitungannya.",
+      "category": "keuangan",
+      "author": "Tim Migios",
+      "date": "2026-08-22",
+      "readMinutes": 6,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/dashboard.webp",
+        "darkSrc": "/images/dashboard-dark.webp",
+        "alt": "Dashboard Migios dengan pendapatan dan member aktif",
+        "position": "left top"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Komisi yang tidak transparan sering menjadi sumber masalah antara klub dan coach. Aturan yang jelas membuat semua pihak tenang."
+        },
+        {
+          "type": "heading",
+          "id": "pilih-dasar-komisi",
+          "text": "Pilih dasar komisi"
+        },
+        {
+          "type": "paragraph",
+          "text": "Komisi bisa dihitung dari penjualan paket, kelas, produk, atau jasa yang ditangani coach."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Persentase dari nilai transaksi.",
+            "Nominal tetap per sesi atau per member.",
+            "Kombinasi keduanya untuk paket tertentu."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Bagikan rincian komisi ke coach setiap periode agar tidak ada salah paham."
+        },
+        {
+          "type": "heading",
+          "id": "hitung-otomatis",
+          "text": "Hitung otomatis"
+        },
+        {
+          "type": "paragraph",
+          "text": "Komisi tercatat dari setiap transaksi di kasir sehingga laporan komisi siap tanpa perhitungan manual."
+        }
+      ]
+    },
+    {
+      "slug": "poin-loyalitas-member",
+      "title": "Poin loyalitas: cara membuat member datang lebih sering",
+      "excerpt": "Rancang poin yang mudah dipahami dan hadiah yang benar-benar diinginkan member.",
+      "category": "pemasaran",
+      "author": "Tim Migios",
+      "date": "2026-08-15",
+      "readMinutes": 5,
+      "cover": {
+        "kind": "phone"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Poin loyalitas memberi alasan tambahan bagi member untuk datang dan bertransaksi di klub."
+        },
+        {
+          "type": "heading",
+          "id": "rancang-aturan-poin",
+          "text": "Rancang aturan poin"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aturan yang mudah dipahami lebih efektif daripada skema yang rumit."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Poin dari setiap transaksi atau check-in.",
+            "Hadiah yang benar-benar diinginkan member.",
+            "Masa berlaku poin yang jelas."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Umumkan hadiah baru secara berkala agar member terus mengumpulkan poin."
+        },
+        {
+          "type": "heading",
+          "id": "tukar-poin-di-keranjang",
+          "text": "Tukar poin di keranjang"
+        },
+        {
+          "type": "paragraph",
+          "text": "Member dapat menukar poin saat membeli paket atau produk, baik di kasir maupun dari aplikasi."
+        }
+      ]
+    },
+    {
+      "slug": "voucher-tanpa-gerus-margin",
+      "title": "Voucher diskon yang tidak menggerus margin",
+      "excerpt": "Batasi masa berlaku, kuota, dan paket yang berlaku supaya voucher mendatangkan member baru, bukan rugi.",
+      "category": "pemasaran",
+      "author": "Tim Migios",
+      "date": "2026-08-08",
+      "readMinutes": 5,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/gym-floor-sunlight.webp",
+        "darkSrc": "/images/gym-floor-sunlight-dark.webp",
+        "alt": "Area gym luas dengan treadmill dan sepeda statis di bawah sinar matahari",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Voucher efektif untuk menarik member baru, tapi tanpa batasan bisa menggerus pendapatan."
+        },
+        {
+          "type": "heading",
+          "id": "batasi-penggunaan-voucher",
+          "text": "Batasi penggunaan voucher"
+        },
+        {
+          "type": "paragraph",
+          "text": "Atur syarat sejak awal agar voucher tepat sasaran."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Masa berlaku yang singkat.",
+            "Kuota pemakaian.",
+            "Paket atau produk yang berlaku."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Pakai voucher berbeda untuk setiap kampanye agar hasilnya mudah dibandingkan."
+        },
+        {
+          "type": "heading",
+          "id": "ukur-hasilnya",
+          "text": "Ukur hasilnya"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lihat berapa transaksi yang memakai voucher dan berapa member yang memperpanjang setelahnya."
+        }
+      ]
+    },
+    {
+      "slug": "checklist-cabang-baru",
+      "title": "Checklist membuka cabang gym baru",
+      "excerpt": "Dari data paket, jadwal, sampai staf: hal yang perlu disiapkan sebelum cabang baru buka.",
+      "category": "operasional",
+      "author": "Tim Migios",
+      "date": "2026-08-01",
+      "readMinutes": 8,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/gym-floor-cardio.webp",
+        "darkSrc": "/images/gym-floor-cardio-dark.webp",
+        "alt": "Deretan alat kardio di area gym dengan jendela besar",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Membuka cabang baru melibatkan banyak persiapan. Checklist sederhana membantu agar tidak ada yang terlewat."
+        },
+        {
+          "type": "heading",
+          "id": "siapkan-data-cabang",
+          "text": "Siapkan data cabang"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mulai dari data dasar sebelum cabang menerima member pertama."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Profil cabang, jam buka, dan lokasi.",
+            "Paket, produk, dan harga.",
+            "Staf, coach, dan hak akses masing-masing."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Salin paket dan produk dari cabang lain untuk menghemat waktu."
+        },
+        {
+          "type": "heading",
+          "id": "uji-alur-harian",
+          "text": "Uji alur harian"
+        },
+        {
+          "type": "paragraph",
+          "text": "Coba alur check-in, penjualan di kasir, dan jadwal kelas bersama staf sebelum hari pembukaan."
+        }
+      ]
+    },
+    {
+      "slug": "antrean-resepsionis-jam-ramai",
+      "title": "Mengurangi antrean di meja resepsionis saat jam ramai",
+      "excerpt": "Gabungkan check-in mandiri, display absensi, dan pembayaran online agar resepsionis tidak kewalahan.",
+      "category": "operasional",
+      "author": "Tim Migios",
+      "date": "2026-07-25",
+      "readMinutes": 5,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/hero-gym-floor-full.webp",
+        "darkSrc": "/images/hero-gym-floor-full-dark.webp",
+        "alt": "Area latihan gym yang terang dengan treadmill, bangku, dan rak beban",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Jam ramai sering membuat meja resepsionis kewalahan. Beberapa perubahan kecil bisa memangkas antrean."
+        },
+        {
+          "type": "heading",
+          "id": "kurangi-pekerjaan-di-meja-depan",
+          "text": "Kurangi pekerjaan di meja depan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pindahkan tugas yang bisa dilakukan member sendiri."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Check-in mandiri dengan QR code atau wajah.",
+            "Display absensi di tablet dekat pintu masuk.",
+            "Perpanjangan paket lewat aplikasi member."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Lihat data jam ramai untuk menambah staf di waktu yang tepat."
+        },
+        {
+          "type": "heading",
+          "id": "biarkan-staf-fokus-pada-member",
+          "text": "Biarkan staf fokus pada member"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dengan check-in dan pembayaran yang lebih otomatis, resepsionis punya waktu untuk menyambut dan membantu member."
+        }
+      ]
+    },
+    {
+      "slug": "sesi-pt-tidak-hangus",
+      "title": "Mengelola sesi PT supaya tidak ada sesi yang hangus",
+      "excerpt": "Pantau sisa sesi tiap member dan ingatkan sebelum masa berlaku paket PT berakhir.",
+      "category": "membership",
+      "author": "Tim Migios",
+      "date": "2026-07-18",
+      "readMinutes": 6,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/jadwal-kalender.webp",
+        "darkSrc": "/images/jadwal-kalender-dark.webp",
+        "alt": "Kalender jadwal kelas Migios per minggu",
+        "position": "left top"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Sesi PT yang hangus membuat member merasa rugi dan enggan membeli paket lagi."
+        },
+        {
+          "type": "heading",
+          "id": "pantau-sisa-sesi",
+          "text": "Pantau sisa sesi"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ketahui berapa sesi yang tersisa dan kapan paket PT berakhir."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Lihat sisa sesi setiap member.",
+            "Ingatkan member yang jarang menjadwalkan sesi.",
+            "Catat setiap sesi segera setelah selesai."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Jadwalkan sesi berikutnya di akhir setiap sesi PT."
+        },
+        {
+          "type": "heading",
+          "id": "libatkan-coach",
+          "text": "Libatkan coach"
+        },
+        {
+          "type": "paragraph",
+          "text": "Coach dapat melihat daftar kliennya beserta sisa sesi, sehingga bisa mengajak member berlatih sebelum paket habis."
+        }
+      ]
+    },
+    {
+      "slug": "kapan-transfer-paket",
+      "title": "Kapan perlu menawarkan transfer paket ke member lain",
+      "excerpt": "Transfer sisa paket bisa menjadi solusi saat member pindah kota atau berhalangan lama.",
+      "category": "membership",
+      "author": "Tim Migios",
+      "date": "2026-07-11",
+      "readMinutes": 4,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/gym-floor-sunlight.webp",
+        "darkSrc": "/images/gym-floor-sunlight-dark.webp",
+        "alt": "Area gym luas dengan treadmill dan sepeda statis di bawah sinar matahari",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Terkadang member tidak bisa melanjutkan paketnya, misalnya karena pindah kota atau berhalangan lama. Transfer paket bisa menjadi solusi."
+        },
+        {
+          "type": "heading",
+          "id": "situasi-yang-cocok-untuk-transfer",
+          "text": "Situasi yang cocok untuk transfer"
+        },
+        {
+          "type": "paragraph",
+          "text": "Transfer membantu member tanpa membuat klub kehilangan pendapatan."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Member pindah domisili.",
+            "Member sakit dalam waktu lama.",
+            "Paket diwariskan ke anggota keluarga."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Tetapkan biaya transfer dan syaratnya di pengaturan agar perlakuannya sama untuk semua member."
+        },
+        {
+          "type": "heading",
+          "id": "sisa-paket-berpindah-utuh",
+          "text": "Sisa paket berpindah utuh"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sisa masa aktif atau sesi dipindahkan ke member penerima dan tercatat di riwayat transaksi."
+        }
+      ]
+    },
+    {
+      "slug": "pengingat-tagihan-whatsapp",
+      "title": "Pengingat WhatsApp untuk tagihan yang jatuh tempo",
+      "excerpt": "Kirim pengingat yang sopan dan tepat waktu untuk pembayaran sebagian yang belum lunas.",
+      "category": "keuangan",
+      "author": "Tim Migios",
+      "date": "2026-07-04",
+      "readMinutes": 4,
+      "cover": {
+        "kind": "photo",
+        "src": "/images/gym-floor-cardio.webp",
+        "darkSrc": "/images/gym-floor-cardio-dark.webp",
+        "alt": "Deretan alat kardio di area gym dengan jendela besar",
+        "position": "center"
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Pembayaran sebagian yang lupa dilunasi bisa menumpuk menjadi piutang. Pengingat yang tepat waktu membantu menagih tanpa terasa memaksa."
+        },
+        {
+          "type": "heading",
+          "id": "kirim-pengingat-yang-sopan",
+          "text": "Kirim pengingat yang sopan"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pesan singkat dan jelas lebih mudah ditanggapi."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Sebutkan nominal dan tanggal jatuh tempo.",
+            "Sertakan cara pembayaran.",
+            "Kirim sebelum dan pada hari jatuh tempo."
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Tips",
+          "text": "Gunakan WhatsApp gateway klub agar pesan terkirim otomatis."
+        },
+        {
+          "type": "heading",
+          "id": "pantau-hasilnya",
+          "text": "Pantau hasilnya"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lihat daftar tagihan yang sudah dan belum lunas dari laporan pembayaran."
+        }
+      ]
+    }
+  ]
+}

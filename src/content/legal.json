@@ -1,0 +1,88 @@
+{
+  "privacy": {
+    "path": "/kebijakan-privasi",
+    "title": "Kebijakan privasi",
+    "updated": "18 Oktober 2026",
+    "description": "Kebijakan ini menjelaskan data apa yang dikumpulkan Migios dan bagaimana data itu dijaga.",
+    "sections": [
+      {
+        "id": "data-yang-kami-kumpulkan",
+        "title": "Data yang kami kumpulkan",
+        "body": "Data akun pemilik dan staf klub, data member yang dimasukkan klub (nama, kontak, paket, kunjungan), data transaksi, serta data perangkat yang dibutuhkan agar aplikasi berjalan."
+      },
+      {
+        "id": "cara-kami-menggunakan-data",
+        "title": "Cara kami menggunakan data",
+        "body": "Data dipakai untuk menjalankan layanan Migios: mencatat membership dan transaksi, mengirim notifikasi yang diminta klub, menyusun laporan, dan meningkatkan kualitas produk."
+      },
+      {
+        "id": "data-wajah-untuk-absensi",
+        "title": "Data wajah untuk absensi",
+        "body": "Jika klub memakai absensi wajah, foto dan data wajah member tersimpan dengan aman dan hanya dipakai untuk mencocokkan wajah saat check-in."
+      },
+      {
+        "id": "penyimpanan-dan-keamanan",
+        "title": "Penyimpanan dan keamanan",
+        "body": "Akses ke data klub dibatasi sesuai peran dan hak akses yang diatur pemilik klub."
+      },
+      {
+        "id": "berbagi-data-dengan-pihak-lain",
+        "title": "Berbagi data dengan pihak lain",
+        "body": "Data hanya dibagikan ke penyedia layanan yang membantu menjalankan Migios, misalnya payment gateway yang dipilih klub, sebatas yang diperlukan."
+      },
+      {
+        "id": "hak-kamu",
+        "title": "Hak kamu",
+        "body": "Pemilik klub dapat melihat, memperbarui, mengekspor, atau meminta penghapusan data klub. Member dapat menghubungi klub tempat mereka terdaftar."
+      },
+      {
+        "id": "menghubungi-kami",
+        "title": "Menghubungi kami",
+        "body": "Pertanyaan tentang kebijakan ini dapat dikirim melalui [halaman Kontak](/kontak)."
+      }
+    ]
+  },
+  "terms": {
+    "path": "/syarat-dan-ketentuan",
+    "title": "Syarat dan ketentuan",
+    "updated": "18 Oktober 2026",
+    "description": "Ketentuan ini mengatur penggunaan layanan Migios oleh klub, staf, dan member.",
+    "sections": [
+      {
+        "id": "layanan-migios",
+        "title": "Layanan Migios",
+        "body": "Migios menyediakan software manajemen gym dan fitness: backoffice untuk pemilik dan staf, aplikasi member, dan Migios Desk untuk absensi wajah."
+      },
+      {
+        "id": "akun-dan-tanggung-jawab",
+        "title": "Akun dan tanggung jawab",
+        "body": "Pemilik klub bertanggung jawab atas akun klub, staf yang diundang beserta hak aksesnya, serta kebenaran data member yang dimasukkan."
+      },
+      {
+        "id": "masa-coba-gratis",
+        "title": "Masa coba gratis",
+        "body": "Paket Free berlaku 30 hari tanpa biaya dengan kapasitas terbatas. Setelah itu klub dapat melanjutkan dengan paket Basic atau Pro."
+      },
+      {
+        "id": "pembayaran-langganan",
+        "title": "Pembayaran langganan",
+        "body": "Langganan dibayar di muka lewat pembayaran online, per bulan, 6 bulan, atau tahunan. Paket, cabang, dan kapasitas tambahan aktif setelah pembayaran berhasil."
+      },
+      {
+        "id": "kapasitas-paket",
+        "title": "Kapasitas paket",
+        "body": "Member, staf, akun coach, dan kelas dihitung per klub, sedangkan cabang dihitung per perusahaan, sesuai paket dan add-on yang aktif."
+      },
+      {
+        "id": "penggunaan-yang-wajar",
+        "title": "Penggunaan yang wajar",
+        "body": "Layanan tidak boleh dipakai untuk kegiatan yang melanggar hukum atau mengganggu sistem Migios dan pengguna lain."
+      },
+      {
+        "id": "menghubungi-kami",
+        "title": "Menghubungi kami",
+        "body": "Pertanyaan tentang ketentuan ini dapat dikirim melalui [halaman Kontak](/kontak)."
+      }
+    ]
+  }
+}

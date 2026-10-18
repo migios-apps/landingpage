@@ -1,0 +1,138 @@
+{
+  "suggestions": [
+    "Payment gateway",
+    "Absensi wajah",
+    "Import member",
+    "Komisi coach"
+  ],
+  "categories": [
+    {
+      "title": "Memulai",
+      "icon": "rocket",
+      "guides": [
+        {
+          "title": "Membuat klub pertama"
+        },
+        {
+          "title": "Mengundang staf dan mengatur hak akses"
+        },
+        {
+          "title": "Mengimpor data member",
+          "keywords": "import excel csv pindah data"
+        }
+      ]
+    },
+    {
+      "title": "Member & paket",
+      "icon": "users",
+      "guides": [
+        {
+          "title": "Menambah member baru"
+        },
+        {
+          "title": "Freeze dan transfer paket",
+          "keywords": "cuti"
+        },
+        {
+          "title": "Mengatur batas kunjungan harian"
+        }
+      ]
+    },
+    {
+      "title": "Kasir & pembayaran",
+      "icon": "receipt",
+      "guides": [
+        {
+          "title": "Menjual paket dan produk di kasir"
+        },
+        {
+          "title": "Pembayaran sebagian dan pelunasan"
+        },
+        {
+          "title": "Menghubungkan payment gateway",
+          "keywords": "pembayaran online"
+        }
+      ]
+    },
+    {
+      "title": "Jadwal & kelas",
+      "icon": "calendar",
+      "guides": [
+        {
+          "title": "Membuat jadwal kelas berulang"
+        },
+        {
+          "title": "Mengatur kuota peserta"
+        },
+        {
+          "title": "Mencatat sesi PT",
+          "keywords": "coach member"
+        }
+      ]
+    },
+    {
+      "title": "Absensi",
+      "icon": "scan-face",
+      "guides": [
+        {
+          "title": "Check-in dengan QR code",
+          "keywords": "absensi"
+        },
+        {
+          "title": "Memasang Migios Desk untuk absensi wajah",
+          "keywords": "face recognition"
+        },
+        {
+          "title": "Membuat display absensi di tablet",
+          "keywords": "check-in"
+        }
+      ]
+    },
+    {
+      "title": "Aplikasi member",
+      "icon": "smartphone",
+      "guides": [
+        {
+          "title": "Mengaktifkan akun member"
+        },
+        {
+          "title": "Self-order paket dari aplikasi"
+        },
+        {
+          "title": "Mengatur konten beranda aplikasi"
+        }
+      ]
+    },
+    {
+      "title": "Laporan",
+      "icon": "chart",
+      "guides": [
+        {
+          "title": "Membaca laporan penjualan"
+        },
+        {
+          "title": "Mengekspor laporan ke PDF, Excel, atau CSV",
+          "keywords": "export unduh"
+        },
+        {
+          "title": "Laporan komisi coach"
+        }
+      ]
+    },
+    {
+      "title": "Akun & langganan",
+      "icon": "credit-card",
+      "guides": [
+        {
+          "title": "Memilih dan mengganti paket"
+        },
+        {
+          "title": "Menambah add-on kapasitas"
+        },
+        {
+          "title": "Menambah cabang baru"
+        }
+      ]
+    }
+  ]
+}

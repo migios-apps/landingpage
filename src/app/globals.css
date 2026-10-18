@@ -1,0 +1,186 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-frame: var(--frame);
+  --color-panel: var(--panel);
+  --color-chip: var(--chip);
+  --color-body: var(--body);
+  --color-body-strong: var(--body-strong);
+  --color-brand-icon: var(--brand-icon);
+  --color-subtle: var(--subtle);
+  --color-line: var(--line);
+  --color-link: var(--link);
+  --color-success-soft: var(--success-soft);
+  --color-success-text: var(--success-text);
+  --color-warning-text: var(--warning-text);
+  --color-info-soft: var(--info-soft);
+  --color-info-text: var(--info-text);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-text: var(--danger-text);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+@theme {
+  --animate-flow-dash: flow-dash 475ms linear infinite;
+
+  @keyframes flow-dash {
+    to {
+      stroke-dashoffset: -14;
+    }
+  }
+}
+
+/* Migios brand: neutral canvas, accent #CA3500 for the one CTA, brand #F54A00 for marks and active states.
+   Dark values follow the Migios design system (background #0a0a0a, surface #171717, card-frame #0d0d0d). */
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0a;
+  --primary: #ca3500;
+  --primary-foreground: #fff7ed;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #171717;
+  --muted: #f5f5f5;
+  --muted-foreground: #666666;
+  --accent: #f5f5f5;
+  --accent-foreground: #171717;
+  --destructive: #e7000b;
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: #ff8904;
+  --radius: 0.625rem;
+
+  --brand: #f54a00;
+  --brand-soft: #f54a0024;
+  --frame: #f7f7f7;
+  --panel: #fafafa;
+  --chip: #f5f5f5;
+  --body: #525252;
+  --body-strong: #404040;
+  --brand-icon: #c2410c;
+  --control-ring: rgba(0, 0, 0, 0.12);
+  --subtle: #737373;
+  --line: #ebebeb;
+  --link: #ca3500;
+  --dot: #dedede;
+  --hatch: #e9e9e9;
+  --stroke: #dcdcdc;
+  --card-ring: rgba(0, 0, 0, 0.07);
+  --bar-from: #404040;
+  --bar-to: #171717;
+  --success-soft: #00bc7d1a;
+  --success-text: #004f3b;
+  --warning-soft: #f0b10024;
+  --warning-text: #733e0a;
+  --info-soft: #8e51ff1a;
+  --info-text: #4d179a;
+  --danger-soft: #e7000b14;
+  --danger-text: #9f0712;
+  --hero-veil-1: rgba(255, 255, 255, 0.94);
+  --hero-veil-2: rgba(255, 255, 255, 0.78);
+  --hero-veil-3: rgba(255, 255, 255, 0.32);
+  --hero-veil-4: rgba(255, 255, 255, 0);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --card: #171717;
+  --card-foreground: #fafafa;
+  --popover: #171717;
+  --popover-foreground: #fafafa;
+  --secondary: #262626;
+  --secondary-foreground: #fafafa;
+  --muted: #262626;
+  --muted-foreground: #a1a1a1;
+  --accent: #262626;
+  --accent-foreground: #fafafa;
+  --destructive: #ff6467;
+  --border: #ffffff1a;
+  --input: #ffffff26;
+
+  --brand-soft: #f54a0033;
+  --frame: #0d0d0d;
+  --panel: #101010;
+  --chip: #1f1f1f;
+  --body: #a3a3a3;
+  --body-strong: #d4d4d4;
+  --brand-icon: #ff8a4c;
+  --control-ring: rgba(255, 255, 255, 0.16);
+  --subtle: #8f8f8f;
+  --line: #262626;
+  --link: #ff6a2b;
+  --dot: #262626;
+  --hatch: #1f1f1f;
+  --stroke: #333333;
+  --card-ring: rgba(255, 255, 255, 0.08);
+  --bar-from: #e5e5e5;
+  --bar-to: #a3a3a3;
+  --success-soft: #00bc7d1f;
+  --success-text: #00d492;
+  --warning-soft: #f0b1001f;
+  --warning-text: #d08700;
+  --info-soft: #8e51ff1f;
+  --info-text: #a684ff;
+  --danger-soft: #ff64671f;
+  --danger-text: #ff6467;
+  --hero-veil-1: rgba(10, 10, 10, 0.86);
+  --hero-veil-2: rgba(10, 10, 10, 0.62);
+  --hero-veil-3: rgba(10, 10, 10, 0.22);
+  --hero-veil-4: rgba(10, 10, 10, 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
