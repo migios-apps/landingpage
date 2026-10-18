@@ -73,7 +73,7 @@ export function Schedule() {
         </div>
 
         <div className="relative mt-14 md:pb-12 lg:pb-16">
-          <div className="relative overflow-hidden rounded-t-[16px]">
+          <div className="relative overflow-hidden rounded-t-[6px] md:rounded-t-[16px]">
             <Image
               src="/images/jadwal-kalender.webp"
               alt="Kalender jadwal Migios tampilan bulan: kelas dan sesi PT per hari, panel Jadwal Hari Ini, dan panel Perlu Perhatian berisi bentrok coach serta jadwal di luar jam buka"

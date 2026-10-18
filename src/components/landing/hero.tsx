@@ -116,8 +116,8 @@ export function Hero() {
       </div>
 
       <div className="relative z-[3] mx-auto mt-9 w-[calc(100%-32px)] max-w-[1000px] md:mt-11 md:w-[calc(100%-96px)] lg:mt-[52px]">
-        <div className="rounded-t-[16px] bg-white/85 px-1.5 pt-1.5 shadow-[inset_0_0_0_1px_var(--border)] [mask-image:linear-gradient(180deg,#000_85%,transparent_100%)] dark:bg-[rgba(23,23,23,0.92)]">
-          <div className="overflow-hidden rounded-t-[16px]">
+        <div className="rounded-t-[6px] md:rounded-t-[16px] bg-white/85 px-1.5 pt-1.5 shadow-[inset_0_0_0_1px_var(--border)] [mask-image:linear-gradient(180deg,#000_85%,transparent_100%)] dark:bg-[rgba(23,23,23,0.92)]">
+          <div className="overflow-hidden rounded-t-[4px] md:rounded-t-[16px]">
             <Image
               src="/images/dashboard.webp"
               alt="Dashboard Migios: pendapatan, member aktif, kunjungan, tren pendapatan, dan performa coach"
