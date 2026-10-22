@@ -43,7 +43,7 @@ export function faqsFor(pricing: Pricing) {
     },
     {
       question: "Bisa dipakai untuk lebih dari satu cabang?",
-      answer: `Bisa. ${branchPlans?.length ? `Di paket ${joinNames(branchPlans, "dan")}, cabang` : "Cabang"} baru ditambah lewat add-on Cabang tambahan dengan harga sama seperti paket yang dipakai, dan cabang itu mendapat kapasitas penuh paketnya. Semua cabang dikelola dari satu akun.`,
+      answer: `Bisa. ${branchPlans?.length ? `Di paket ${joinNames(branchPlans, "dan")}, cabang` : "Cabang"} baru dibeli seharga paket dibagi jumlah cabang yang termasuk paket, dan cabang itu mendapat kapasitas penuh paketnya. Semua cabang dikelola dari satu akun.`,
     },
     {
       question: "Apakah member punya aplikasi sendiri?",

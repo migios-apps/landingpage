@@ -242,14 +242,18 @@ export function PricingCards({ pricing, titleAs: Title = "h2" }: { pricing: Pric
                   <div className={cn("relative mt-6 border-t pt-[18px]", dark ? "border-white/10" : "border-line")}>
                     <p className={cn("mb-1 font-mono text-[11px] tracking-[0.08em] uppercase", muted)}>Kapasitas</p>
                     <dl>
-                      {plan.capacities.map((capacity) => (
-                        <div key={capacity.key} className="flex justify-between gap-3 py-[7px] text-sm">
-                          <dt className={muted}>{capacity.label}</dt>
-                          <dd className="font-semibold tabular-nums">
-                            {capacity.value === null ? "Tanpa batas" : capacity.value.toLocaleString("id-ID")}
-                          </dd>
-                        </div>
-                      ))}
+                      {plan.capacities
+                        .filter((capacity) => !(capacity.key === "clubs.max" && capacity.value === 1))
+                        .map((capacity) => (
+                          <div key={capacity.key} className="flex justify-between gap-3 py-[7px] text-sm">
+                            <dt className={muted}>
+                              {capacity.key === "clubs.max" ? "Cabang termasuk" : capacity.label}
+                            </dt>
+                            <dd className="font-semibold tabular-nums">
+                              {capacity.value === null ? "Tanpa batas" : capacity.value.toLocaleString("id-ID")}
+                            </dd>
+                          </div>
+                        ))}
                     </dl>
                   </div>
 
@@ -286,27 +290,33 @@ export function PricingCards({ pricing, titleAs: Title = "h2" }: { pricing: Pric
             </span>
           </div>
           <ul className="mt-4 flex flex-wrap gap-2.5">
-            {pricing.addons.map((addon) => {
-              const Icon = addonIcons[addon.code] ?? Users
-              const amount = priceFor(addon.prices, code)
-              return (
-                <li
-                  key={addon.code}
-                  className="flex min-w-0 flex-[1_1_190px] items-center gap-3 rounded-[14px] bg-card p-3 shadow-[0_0_0_1px_var(--card-ring)]"
-                >
-                  <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-brand-soft text-brand-icon">
-                    <Icon className="size-[17px]" aria-hidden />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="text-[13px] font-semibold">{addon.name}</p>
-                    <p className="text-xs text-muted-foreground">{addon.unit_label}</p>
-                    <p className="mt-0.5 font-mono text-[13px] font-semibold">
-                      {addon.price_mode === "follow_plan" ? "Ikut harga paket" : amount !== null ? rupiah(amount) : "—"}
-                    </p>
-                  </div>
-                </li>
-              )
-            })}
+            {pricing.addons
+              .filter((addon) => addon.price_mode !== "follow_plan")
+              .map((addon) => {
+                const Icon = addonIcons[addon.code] ?? Users
+                const amount = priceFor(addon.prices, code)
+                return (
+                  <li
+                    key={addon.code}
+                    className="flex min-w-0 flex-[1_1_190px] items-center gap-3 rounded-[14px] bg-card p-3 shadow-[0_0_0_1px_var(--card-ring)]"
+                  >
+                    <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-brand-soft text-brand-icon">
+                      <Icon className="size-[17px]" aria-hidden />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-[13px] font-semibold">{addon.name}</p>
+                      <p className="text-xs text-muted-foreground">{addon.unit_label}</p>
+                      <p className="mt-0.5 font-mono text-[13px] font-semibold">
+                        {addon.price_mode === "follow_plan"
+                          ? "Ikut harga paket"
+                          : amount !== null
+                            ? rupiah(amount)
+                            : "—"}
+                      </p>
+                    </div>
+                  </li>
+                )
+              })}
             {featureAddons.length > 0 ? (
               <li className="flex min-w-0 flex-[1_1_190px] items-center gap-3 rounded-[14px] bg-card p-3 shadow-[0_0_0_1px_var(--card-ring)]">
                 <span className="inline-flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-brand-soft text-brand-icon">
@@ -325,8 +335,9 @@ export function PricingCards({ pricing, titleAs: Title = "h2" }: { pricing: Pric
         </div>
 
         <p className="mx-auto mt-5 max-w-[720px] text-center text-[13px] leading-[1.6] text-muted-foreground">
-          Member aktif, staf, coach, dan jadwal kelas aktif dihitung per cabang. Cabang tambahan mendapat kapasitas
-          penuh paketnya. Paket dan add-on aktif setelah pembayaran berhasil.
+          Member aktif, staf, coach, dan jadwal kelas aktif dihitung per cabang. Cabang tambahan dibeli seharga paket
+          dibagi jumlah cabang yang termasuk, dan mendapat kapasitas penuh paketnya. Paket dan add-on aktif setelah
+          pembayaran berhasil.
         </p>
       </div>
     </section>
