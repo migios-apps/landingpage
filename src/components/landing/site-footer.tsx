@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 import { buttonVariants } from "@/components/ui/button"
+import { getPricing } from "@/lib/pricing-data"
 import { signInHref, signUpHref } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
@@ -33,7 +34,8 @@ const columns = [
   },
 ]
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const trialDays = (await getPricing()).trial_days
   return (
     <footer className="overflow-hidden bg-[#0a0a0a] text-[#fafafa] dark:border-t dark:border-white/8">
       <div className="mx-auto max-w-[1200px] px-4 pt-12 md:px-8 md:pt-[72px] lg:pt-24">
@@ -54,7 +56,7 @@ export function SiteFooter() {
               Rapikan operasional gym kamu mulai hari ini.
             </h2>
             <p className="mt-4 max-w-[520px] text-[17px] leading-[1.55] text-pretty text-[#a1a1a1]">
-              Coba gratis 30 hari. Buat klub, atur paket dan jadwal, lalu mulai jualan dari kasir.
+              {trialDays ? `Coba gratis ${trialDays} hari. ` : ""}Buat klub, atur paket dan jadwal, lalu mulai jualan dari kasir.
             </p>
           </div>
           <div className="relative flex w-full flex-wrap gap-3 md:w-auto">

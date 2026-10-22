@@ -3,12 +3,21 @@ import Link from "next/link"
 import { PageHero } from "@/components/site/page-hero"
 import { TocNav } from "@/components/site/toc-nav"
 import legal from "@/content/legal.json"
+import { getPricing } from "@/lib/pricing-data"
 import { cn } from "@/lib/utils"
 
 type LegalDocument = (typeof legal)[keyof typeof legal]
 
 // Privacy policy and terms share one layout; the tabs are links so each document keeps its own URL.
-export function LegalPage({ document }: { document: LegalDocument }) {
+export async function LegalPage({ document }: { document: LegalDocument }) {
+  const pricing = await getPricing()
+  const paid = pricing.plans.filter((plan) => !plan.is_trial).map((plan) => plan.name)
+  const values: Record<string, string> = {
+    trial_name: pricing.plans.find((plan) => plan.is_trial)?.name ?? "trial",
+    trial_days: String(pricing.trial_days ?? 0),
+    paid_plans: paid.length > 1 ? `${paid.slice(0, -1).join(", ")} atau ${paid[paid.length - 1]}` : (paid[0] ?? ""),
+  }
+  const fill = (text: string) => text.replace(/\{(\w+)\}/g, (match, key: string) => values[key] ?? match)
   const tocItems = document.sections.map((section, i) => ({ id: section.id, label: `${i + 1}. ${section.title}` }))
 
   return (
@@ -54,7 +63,7 @@ export function LegalPage({ document }: { document: LegalDocument }) {
                 </h2>
                 <p className="text-[15px] leading-[1.75] text-neutral-800 md:text-base dark:text-neutral-300">
                   {/* Body text may hold [label](/path) links. */}
-                  {section.body.split(/(\[[^\]]+\]\([^)]+\))/).map((part, j) => {
+                  {fill(section.body).split(/(\[[^\]]+\]\([^)]+\))/).map((part, j) => {
                     const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
                     return link ? (
                       <Link key={j} href={link[2]} className="font-medium text-link underline-offset-2 hover:underline">

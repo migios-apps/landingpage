@@ -2,42 +2,81 @@ import Link from "next/link"
 import { MessageCircle } from "lucide-react"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import type { Pricing } from "@/lib/pricing"
+import { getPricing } from "@/lib/pricing-data"
+
+const joinNames = (names: string[], last: string) =>
+  names.length <= 1 ? (names[0] ?? "") : `${names.slice(0, -1).join(", ")} ${last} ${names[names.length - 1]}`
 
 // Also rendered as FAQPage structured data on the page, so keep questions and answers in sync here.
-export const faqs = [
-  {
-    question: "Apakah Migios bisa dicoba gratis?",
-    answer:
-      "Bisa. Paket Free berlaku 30 hari tanpa biaya untuk 1 cabang dengan 20 member, 1 staf, dan 5 kelas per bulan, kasir sudah termasuk. Setelah itu lanjutkan dengan paket Basic atau Pro.",
-  },
-  {
-    question: "Bagaimana cara membayar langganan?",
-    answer:
-      "Langganan dibayar di muka lewat pembayaran online, per bulan, 6 bulan, atau tahunan. Paket, cabang, atau kapasitas tambahan aktif setelah pembayaran berhasil.",
-  },
-  {
-    question: "Bisa dipakai untuk lebih dari satu cabang?",
-    answer:
-      "Bisa. Paket Pro mencakup 3 cabang dalam satu perusahaan, dan cabang tambahan bisa dibeli sebagai add-on. Semua cabang dikelola dari satu akun.",
-  },
-  {
-    question: "Apakah member punya aplikasi sendiri?",
-    answer:
-      "Ya. Dari aplikasi Migios, member melihat paket aktif dan jadwal, check-in, serta membaca promo dan artikel dari klub. Di paket Basic dan Pro, member juga bisa memesan paket dan produk sendiri.",
-  },
-  {
-    question: "Absensi wajah butuh perangkat apa?",
-    answer:
-      "Komputer Windows di klub yang menjalankan aplikasi Migios Desk. Wajah dipindai dari tablet display atau layar resepsionis, dan data wajah member tersimpan dengan aman.",
-  },
-  {
-    question: "Apakah ada pengingat lewat WhatsApp?",
-    answer:
-      "Ada di paket Basic dan Pro. Pengingat jadwal dan tagihan dikirim lewat WhatsApp gateway yang terhubung ke klub.",
-  },
-]
+export function faqsFor(pricing: Pricing) {
+  const paid = pricing.plans.filter((plan) => !plan.is_trial)
+  const trial = pricing.plans.find((plan) => plan.is_trial)
+  const capacity = (key: string) => trial?.capacities.find((item) => item.key === key)?.value ?? null
+  const featureAccess = (key: string) => pricing.features.find((feature) => feature.key === key)?.access ?? {}
+  const plansWith = (key: string, access: "included" | "addon") =>
+    paid.filter((plan) => featureAccess(key)[plan.code] === access).map((plan) => plan.name)
+  const branchPlans = pricing.addons
+    .find((addon) => addon.price_mode === "follow_plan")
+    ?.plans.map((code) => pricing.plans.find((plan) => plan.code === code)?.name)
+    .filter((name): name is string => Boolean(name))
+  const webIn = plansWith("member_web_app", "included")[0]
+  const mobileIn = plansWith("member_mobile_app", "included")[0]
+  const faceIn = plansWith("face_attendance", "included")
+  const faceAddon = plansWith("face_attendance", "addon")
+  const paidNames = joinNames(
+    paid.map((plan) => plan.name),
+    "atau",
+  )
 
-export function Faq() {
+  return [
+    {
+      question: "Apakah Migios bisa dicoba gratis?",
+      answer: trial
+        ? `Bisa. ${trial.name} berlaku ${pricing.trial_days} hari tanpa biaya setup, dengan semua fitur Basic untuk ${capacity("clubs.max") ?? 1} cabang, ${capacity("members.max")} member aktif, ${capacity("staff.max")} staf, dan ${capacity("coaches.max")} coach. Setelah itu lanjutkan dengan paket ${paidNames}.`
+        : `Pilih paket ${paidNames} dan mulai dari kasir.`,
+    },
+    {
+      question: "Bagaimana cara membayar langganan?",
+      answer:
+        "Langganan dibayar di muka lewat pembayaran online, per bulan, 6 bulan, atau tahunan. Paket, cabang, atau kapasitas tambahan aktif setelah pembayaran berhasil.",
+    },
+    {
+      question: "Bisa dipakai untuk lebih dari satu cabang?",
+      answer: `Bisa. ${branchPlans?.length ? `Di paket ${joinNames(branchPlans, "dan")}, cabang` : "Cabang"} baru ditambah lewat add-on Cabang tambahan dengan harga sama seperti paket yang dipakai, dan cabang itu mendapat kapasitas penuh paketnya. Semua cabang dikelola dari satu akun.`,
+    },
+    {
+      question: "Apakah member punya aplikasi sendiri?",
+      answer: [
+        "Ya. Dari aplikasi Migios, member melihat paket aktif dan jadwal, check-in, serta membaca promo dan artikel dari klub.",
+        webIn && mobileIn
+          ? `Aplikasi web member dan coach termasuk di paket ${webIn}, aplikasi mobile termasuk di paket ${mobileIn}, dan keduanya bisa ditambah sebagai add-on.`
+          : null,
+        "Pesan paket dan produk sendiri tersedia di aplikasi mobile.",
+      ]
+        .filter(Boolean)
+        .join(" "),
+    },
+    {
+      question: "Absensi wajah butuh perangkat apa?",
+      answer: [
+        "Komputer Windows di klub yang menjalankan aplikasi Migios Desk. Wajah dipindai dari tablet display atau layar resepsionis, dan data wajah member tersimpan dengan aman.",
+        faceIn.length && faceAddon.length
+          ? `Absensi wajah termasuk di paket ${joinNames(faceIn, "dan")} dan bisa ditambah sebagai add-on di ${joinNames(faceAddon, "dan")}.`
+          : null,
+      ]
+        .filter(Boolean)
+        .join(" "),
+    },
+    {
+      question: "Apakah ada pengingat lewat WhatsApp?",
+      answer: "Ada di semua paket. Pengingat jadwal dan tagihan dikirim lewat WhatsApp gateway yang terhubung ke klub.",
+    },
+  ]
+}
+
+export async function Faq() {
+  const faqs = faqsFor(await getPricing())
   return (
     <section id="faq" aria-labelledby="faq-title" className="border-t border-line bg-frame">
       <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-4 py-16 md:px-8 md:py-[88px] lg:py-28">

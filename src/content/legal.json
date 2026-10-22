@@ -61,7 +61,7 @@
       {
         "id": "masa-coba-gratis",
         "title": "Masa coba gratis",
-        "body": "Paket Free berlaku 30 hari tanpa biaya dengan kapasitas terbatas. Setelah itu klub dapat melanjutkan dengan paket Basic atau Pro."
+        "body": "Paket {trial_name} berlaku {trial_days} hari tanpa biaya dengan kapasitas terbatas. Setelah itu klub dapat melanjutkan dengan paket {paid_plans}."
       },
       {
         "id": "pembayaran-langganan",

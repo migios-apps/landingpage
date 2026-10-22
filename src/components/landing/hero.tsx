@@ -39,7 +39,7 @@ const paidBadge =
   "inline-flex h-[22px] shrink-0 items-center rounded-full bg-emerald-100 px-2 text-[11px] font-semibold text-emerald-700 ring-1 ring-emerald-300 ring-inset dark:bg-emerald-100/30 dark:text-emerald-300"
 const cardMeta = "text-xs text-neutral-500 dark:text-neutral-400"
 
-export function Hero() {
+export function Hero({ trialDays }: { trialDays: number | null }) {
   return (
     <section
       aria-labelledby="hero-title"
@@ -102,7 +102,7 @@ export function Hero() {
               "h-[50px] w-full gap-2 rounded-full px-[26px] text-[15px] font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_1px_2px_rgba(202,53,0,0.3),0_10px_30px_-12px_rgba(202,53,0,0.5)] hover:bg-[#b32f00] md:w-auto"
             )}
           >
-            Coba Gratis 30 Hari
+            {trialDays ? `Coba Gratis ${trialDays} Hari` : "Coba Gratis"}
             <ArrowRight className="size-4" aria-hidden />
           </a>
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
@@ -110,7 +110,9 @@ export function Hero() {
               <Zap className="size-[18px] fill-brand" stroke="none" aria-hidden />
               Rp 0
             </span>
-            <span className="mt-0.5 text-[12.5px] text-subtle dark:text-white/60">30 hari pertama, kasir termasuk</span>
+            <span className="mt-0.5 text-[12.5px] text-subtle dark:text-white/60">
+              {trialDays ? `${trialDays} hari pertama, kasir termasuk` : "Kasir termasuk"}
+            </span>
           </div>
         </div>
       </div>

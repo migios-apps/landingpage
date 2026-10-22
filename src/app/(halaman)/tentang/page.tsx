@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Monitor, RefreshCw, ScanFace, ShieldCheck, Smartphone, Smile, Tag } from "lucide-react"
 
 import { PageHero } from "@/components/site/page-hero"
+import { getPricing } from "@/lib/pricing-data"
 import { pageMetadata } from "@/lib/site"
 
 export const metadata = pageMetadata({
@@ -11,7 +12,7 @@ export const metadata = pageMetadata({
     "Migios adalah software manajemen gym dan fitness untuk pemilik klub, kasir, coach, resepsionis, dan member, dalam satu aplikasi yang terhubung.",
 })
 
-const principles = [
+const principlesFor = (trialDays: number | null) => [
   {
     title: "Mudah dipakai staf",
     description: "Kasir dan resepsionis bisa langsung bekerja tanpa pelatihan panjang.",
@@ -24,7 +25,9 @@ const principles = [
   },
   {
     title: "Harga yang jelas",
-    description: "Paket dan add-on tertulis terbuka, mulai dari masa coba gratis 30 hari.",
+    description: trialDays
+      ? `Paket dan add-on tertulis terbuka, mulai dari masa coba gratis ${trialDays} hari.`
+      : "Paket dan add-on tertulis terbuka.",
     Icon: Tag,
   },
   {
@@ -38,7 +41,8 @@ const sectionTitle = "text-[28px] leading-[1.1] font-[650] tracking-[-0.035em] t
 const card = "flex min-w-0 flex-col gap-3.5 rounded-[20px] bg-card p-3.5 shadow-[0_0_0_1px_var(--card-ring),0_2px_4px_rgba(0,0,0,0.04)]"
 const iconChip = "inline-flex shrink-0 items-center justify-center rounded-[11px] bg-brand-soft text-brand-icon"
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const principles = principlesFor((await getPricing()).trial_days)
   return (
     <>
       <PageHero

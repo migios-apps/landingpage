@@ -1,0 +1,3211 @@
+{
+  "currency": "IDR",
+  "trial_days": 14,
+  "periods": [
+    {
+      "code": "monthly",
+      "label": "Bulanan",
+      "months": 1,
+      "days": 0
+    },
+    {
+      "code": "6_months",
+      "label": "6 Bulan",
+      "months": 6,
+      "days": 0
+    },
+    {
+      "code": "yearly",
+      "label": "Tahunan",
+      "months": 12,
+      "days": 0
+    }
+  ],
+  "plans": [
+    {
+      "code": "free",
+      "name": "Free Trial",
+      "description": "Coba semua fitur Basic selama 14 hari, tanpa biaya setup.",
+      "is_trial": true,
+      "addons_allowed": false,
+      "feature_groups": [
+        {
+          "label": "Semua fitur Basic",
+          "grouped": true,
+          "features": [
+            {
+              "key": "attendance_code",
+              "label": "Absensi input kode",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "attendance_qr",
+              "label": "Absensi scan QR",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "point_of_sale",
+              "label": "Point of Sales · paket",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "payment_gateway",
+              "label": "Payment gateway",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "class_management",
+              "label": "Manajemen kelas",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "cutting_session",
+              "label": "Potong sesi",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "measurement",
+              "label": "Pengukuran member",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            },
+            {
+              "key": "voucher",
+              "label": "Voucher",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "referral",
+              "label": "Referral",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            },
+            {
+              "key": "loyalty_point",
+              "label": "Loyalty & redeem point",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            },
+            {
+              "key": "member_web_app",
+              "label": "Aplikasi web member & coach",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            },
+            {
+              "key": "commission_sales",
+              "label": "Komisi sales",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            },
+            {
+              "key": "whatsapp",
+              "label": "WhatsApp automation",
+              "access": "included",
+              "addon_prices": []
+            },
+            {
+              "key": "report_basic",
+              "label": "Laporan dasar",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        }
+      ],
+      "prices": [
+        {
+          "code": "14_days",
+          "label": "14 Hari",
+          "months": 0,
+          "days": 14,
+          "amount": 0,
+          "saving_percent": 0
+        }
+      ],
+      "capacities": [
+        {
+          "key": "members.max",
+          "label": "Member aktif",
+          "unit": "member",
+          "value": 25
+        },
+        {
+          "key": "staff.max",
+          "label": "Staf",
+          "unit": "orang",
+          "value": 1
+        },
+        {
+          "key": "coaches.max",
+          "label": "Coach",
+          "unit": "coach",
+          "value": 1
+        },
+        {
+          "key": "class_schedules.max",
+          "label": "Jadwal kelas aktif",
+          "unit": "jadwal",
+          "value": 5
+        },
+        {
+          "key": "clubs.max",
+          "label": "Cabang",
+          "unit": "cabang",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "code": "starter",
+      "name": "Starter",
+      "description": "Untuk gym kecil yang baru mulai.",
+      "is_trial": false,
+      "addons_allowed": true,
+      "feature_groups": [
+        {
+          "label": "Absensi input kode",
+          "grouped": false,
+          "features": [
+            {
+              "key": "attendance_code",
+              "label": "Absensi input kode",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Absensi scan QR",
+          "grouped": false,
+          "features": [
+            {
+              "key": "attendance_qr",
+              "label": "Absensi scan QR",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Laporan dasar",
+          "grouped": false,
+          "features": [
+            {
+              "key": "report_basic",
+              "label": "Laporan dasar",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Manajemen kelas",
+          "grouped": false,
+          "features": [
+            {
+              "key": "class_management",
+              "label": "Manajemen kelas",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Payment gateway",
+          "grouped": false,
+          "features": [
+            {
+              "key": "payment_gateway",
+              "label": "Payment gateway",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Point of Sales · paket",
+          "grouped": false,
+          "features": [
+            {
+              "key": "point_of_sale",
+              "label": "Point of Sales · paket",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Potong sesi",
+          "grouped": false,
+          "features": [
+            {
+              "key": "cutting_session",
+              "label": "Potong sesi",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Voucher",
+          "grouped": false,
+          "features": [
+            {
+              "key": "voucher",
+              "label": "Voucher",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "WhatsApp automation",
+          "grouped": false,
+          "features": [
+            {
+              "key": "whatsapp",
+              "label": "WhatsApp automation",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Absensi face recognition",
+          "grouped": false,
+          "features": [
+            {
+              "key": "face_attendance",
+              "label": "Absensi face recognition",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 75000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 450000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 900000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Aplikasi mobile member & coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_mobile_app",
+              "label": "Aplikasi mobile member & coach",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 100000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 600000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 1200000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Aplikasi web member & coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_web_app",
+              "label": "Aplikasi web member & coach",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Custom invoice",
+          "grouped": false,
+          "features": [
+            {
+              "key": "custom_invoice",
+              "label": "Custom invoice",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Freeze",
+          "grouped": false,
+          "features": [
+            {
+              "key": "freeze",
+              "label": "Freeze",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Kelola tampilan aplikasi mobile",
+          "grouped": false,
+          "features": [
+            {
+              "key": "app_customization",
+              "label": "Kelola tampilan aplikasi mobile",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Komisi PT & kelas",
+          "grouped": false,
+          "features": [
+            {
+              "key": "commission",
+              "label": "Komisi PT & kelas",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Komisi sales",
+          "grouped": false,
+          "features": [
+            {
+              "key": "commission_sales",
+              "label": "Komisi sales",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Laporan lengkap",
+          "grouped": false,
+          "features": [
+            {
+              "key": "analytics_advanced",
+              "label": "Laporan lengkap",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Loyalty & redeem point",
+          "grouped": false,
+          "features": [
+            {
+              "key": "loyalty_point",
+              "label": "Loyalty & redeem point",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Pengukuran member",
+          "grouped": false,
+          "features": [
+            {
+              "key": "measurement",
+              "label": "Pengukuran member",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Pesan sendiri",
+          "grouped": false,
+          "features": [
+            {
+              "key": "self_order",
+              "label": "Pesan sendiri",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Point of Sales · produk",
+          "grouped": false,
+          "features": [
+            {
+              "key": "pos_product",
+              "label": "Point of Sales · produk",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Rating coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "coach_rating",
+              "label": "Rating coach",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Referral",
+          "grouped": false,
+          "features": [
+            {
+              "key": "referral",
+              "label": "Referral",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Transfer member",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_transfer",
+              "label": "Transfer member",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 149000,
+          "saving_percent": 0
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 819500,
+          "saving_percent": 8
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 1490000,
+          "saving_percent": 17
+        }
+      ],
+      "capacities": [
+        {
+          "key": "members.max",
+          "label": "Member aktif",
+          "unit": "member",
+          "value": 250
+        },
+        {
+          "key": "staff.max",
+          "label": "Staf",
+          "unit": "orang",
+          "value": 1
+        },
+        {
+          "key": "coaches.max",
+          "label": "Coach",
+          "unit": "coach",
+          "value": 3
+        },
+        {
+          "key": "class_schedules.max",
+          "label": "Jadwal kelas aktif",
+          "unit": "jadwal",
+          "value": 10
+        },
+        {
+          "key": "clubs.max",
+          "label": "Cabang",
+          "unit": "cabang",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "code": "basic",
+      "name": "Basic",
+      "description": "Loyalitas member dan aplikasi web untuk member & coach.",
+      "is_trial": false,
+      "addons_allowed": true,
+      "feature_groups": [
+        {
+          "label": "Absensi input kode",
+          "grouped": false,
+          "features": [
+            {
+              "key": "attendance_code",
+              "label": "Absensi input kode",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Absensi scan QR",
+          "grouped": false,
+          "features": [
+            {
+              "key": "attendance_qr",
+              "label": "Absensi scan QR",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Aplikasi web member & coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_web_app",
+              "label": "Aplikasi web member & coach",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Komisi sales",
+          "grouped": false,
+          "features": [
+            {
+              "key": "commission_sales",
+              "label": "Komisi sales",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Laporan dasar",
+          "grouped": false,
+          "features": [
+            {
+              "key": "report_basic",
+              "label": "Laporan dasar",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Loyalty & redeem point",
+          "grouped": false,
+          "features": [
+            {
+              "key": "loyalty_point",
+              "label": "Loyalty & redeem point",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Manajemen kelas",
+          "grouped": false,
+          "features": [
+            {
+              "key": "class_management",
+              "label": "Manajemen kelas",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Payment gateway",
+          "grouped": false,
+          "features": [
+            {
+              "key": "payment_gateway",
+              "label": "Payment gateway",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Pengukuran member",
+          "grouped": false,
+          "features": [
+            {
+              "key": "measurement",
+              "label": "Pengukuran member",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Point of Sales · paket",
+          "grouped": false,
+          "features": [
+            {
+              "key": "point_of_sale",
+              "label": "Point of Sales · paket",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Potong sesi",
+          "grouped": false,
+          "features": [
+            {
+              "key": "cutting_session",
+              "label": "Potong sesi",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Referral",
+          "grouped": false,
+          "features": [
+            {
+              "key": "referral",
+              "label": "Referral",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Voucher",
+          "grouped": false,
+          "features": [
+            {
+              "key": "voucher",
+              "label": "Voucher",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "WhatsApp automation",
+          "grouped": false,
+          "features": [
+            {
+              "key": "whatsapp",
+              "label": "WhatsApp automation",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Absensi face recognition",
+          "grouped": false,
+          "features": [
+            {
+              "key": "face_attendance",
+              "label": "Absensi face recognition",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 75000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 450000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 900000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Aplikasi mobile member & coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_mobile_app",
+              "label": "Aplikasi mobile member & coach",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 100000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 600000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 1200000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Custom invoice",
+          "grouped": false,
+          "features": [
+            {
+              "key": "custom_invoice",
+              "label": "Custom invoice",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Freeze",
+          "grouped": false,
+          "features": [
+            {
+              "key": "freeze",
+              "label": "Freeze",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Kelola tampilan aplikasi mobile",
+          "grouped": false,
+          "features": [
+            {
+              "key": "app_customization",
+              "label": "Kelola tampilan aplikasi mobile",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Komisi PT & kelas",
+          "grouped": false,
+          "features": [
+            {
+              "key": "commission",
+              "label": "Komisi PT & kelas",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Laporan lengkap",
+          "grouped": false,
+          "features": [
+            {
+              "key": "analytics_advanced",
+              "label": "Laporan lengkap",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Pesan sendiri",
+          "grouped": false,
+          "features": [
+            {
+              "key": "self_order",
+              "label": "Pesan sendiri",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Point of Sales · produk",
+          "grouped": false,
+          "features": [
+            {
+              "key": "pos_product",
+              "label": "Point of Sales · produk",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Rating coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "coach_rating",
+              "label": "Rating coach",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Transfer member",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_transfer",
+              "label": "Transfer member",
+              "access": "addon",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 299000,
+          "saving_percent": 0
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 1644500,
+          "saving_percent": 8
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 2990000,
+          "saving_percent": 17
+        }
+      ],
+      "capacities": [
+        {
+          "key": "members.max",
+          "label": "Member aktif",
+          "unit": "member",
+          "value": 1000
+        },
+        {
+          "key": "staff.max",
+          "label": "Staf",
+          "unit": "orang",
+          "value": 2
+        },
+        {
+          "key": "coaches.max",
+          "label": "Coach",
+          "unit": "coach",
+          "value": 5
+        },
+        {
+          "key": "class_schedules.max",
+          "label": "Jadwal kelas aktif",
+          "unit": "jadwal",
+          "value": 30
+        },
+        {
+          "key": "clubs.max",
+          "label": "Cabang",
+          "unit": "cabang",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "code": "pro",
+      "name": "Pro",
+      "description": "Semua fitur, aplikasi mobile, dan laporan lengkap.",
+      "is_trial": false,
+      "addons_allowed": true,
+      "feature_groups": [
+        {
+          "label": "Absensi face recognition",
+          "grouped": false,
+          "features": [
+            {
+              "key": "face_attendance",
+              "label": "Absensi face recognition",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 75000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 450000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 900000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Absensi input kode",
+          "grouped": false,
+          "features": [
+            {
+              "key": "attendance_code",
+              "label": "Absensi input kode",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Absensi scan QR",
+          "grouped": false,
+          "features": [
+            {
+              "key": "attendance_qr",
+              "label": "Absensi scan QR",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Aplikasi mobile member & coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_mobile_app",
+              "label": "Aplikasi mobile member & coach",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 100000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 600000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 1200000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Aplikasi web member & coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_web_app",
+              "label": "Aplikasi web member & coach",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Custom invoice",
+          "grouped": false,
+          "features": [
+            {
+              "key": "custom_invoice",
+              "label": "Custom invoice",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Freeze",
+          "grouped": false,
+          "features": [
+            {
+              "key": "freeze",
+              "label": "Freeze",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Kelola tampilan aplikasi mobile",
+          "grouped": false,
+          "features": [
+            {
+              "key": "app_customization",
+              "label": "Kelola tampilan aplikasi mobile",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Komisi PT & kelas",
+          "grouped": false,
+          "features": [
+            {
+              "key": "commission",
+              "label": "Komisi PT & kelas",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Komisi sales",
+          "grouped": false,
+          "features": [
+            {
+              "key": "commission_sales",
+              "label": "Komisi sales",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Laporan dasar",
+          "grouped": false,
+          "features": [
+            {
+              "key": "report_basic",
+              "label": "Laporan dasar",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Laporan lengkap",
+          "grouped": false,
+          "features": [
+            {
+              "key": "analytics_advanced",
+              "label": "Laporan lengkap",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Loyalty & redeem point",
+          "grouped": false,
+          "features": [
+            {
+              "key": "loyalty_point",
+              "label": "Loyalty & redeem point",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Manajemen kelas",
+          "grouped": false,
+          "features": [
+            {
+              "key": "class_management",
+              "label": "Manajemen kelas",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Payment gateway",
+          "grouped": false,
+          "features": [
+            {
+              "key": "payment_gateway",
+              "label": "Payment gateway",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Pengukuran member",
+          "grouped": false,
+          "features": [
+            {
+              "key": "measurement",
+              "label": "Pengukuran member",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Pesan sendiri",
+          "grouped": false,
+          "features": [
+            {
+              "key": "self_order",
+              "label": "Pesan sendiri",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Point of Sales · paket",
+          "grouped": false,
+          "features": [
+            {
+              "key": "point_of_sale",
+              "label": "Point of Sales · paket",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Point of Sales · produk",
+          "grouped": false,
+          "features": [
+            {
+              "key": "pos_product",
+              "label": "Point of Sales · produk",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 50000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 300000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Potong sesi",
+          "grouped": false,
+          "features": [
+            {
+              "key": "cutting_session",
+              "label": "Potong sesi",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "Rating coach",
+          "grouped": false,
+          "features": [
+            {
+              "key": "coach_rating",
+              "label": "Rating coach",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Referral",
+          "grouped": false,
+          "features": [
+            {
+              "key": "referral",
+              "label": "Referral",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 35000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 210000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 420000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Transfer member",
+          "grouped": false,
+          "features": [
+            {
+              "key": "member_transfer",
+              "label": "Transfer member",
+              "access": "included",
+              "addon_prices": [
+                {
+                  "code": "monthly",
+                  "label": "Bulanan",
+                  "months": 1,
+                  "days": 0,
+                  "amount": 25000
+                },
+                {
+                  "code": "6_months",
+                  "label": "6 Bulan",
+                  "months": 6,
+                  "days": 0,
+                  "amount": 150000
+                },
+                {
+                  "code": "yearly",
+                  "label": "Tahunan",
+                  "months": 12,
+                  "days": 0,
+                  "amount": 300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Voucher",
+          "grouped": false,
+          "features": [
+            {
+              "key": "voucher",
+              "label": "Voucher",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        },
+        {
+          "label": "WhatsApp automation",
+          "grouped": false,
+          "features": [
+            {
+              "key": "whatsapp",
+              "label": "WhatsApp automation",
+              "access": "included",
+              "addon_prices": []
+            }
+          ]
+        }
+      ],
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 499000,
+          "saving_percent": 0
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 2744500,
+          "saving_percent": 8
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 4990000,
+          "saving_percent": 17
+        }
+      ],
+      "capacities": [
+        {
+          "key": "members.max",
+          "label": "Member aktif",
+          "unit": "member",
+          "value": 2500
+        },
+        {
+          "key": "staff.max",
+          "label": "Staf",
+          "unit": "orang",
+          "value": 5
+        },
+        {
+          "key": "coaches.max",
+          "label": "Coach",
+          "unit": "coach",
+          "value": 10
+        },
+        {
+          "key": "class_schedules.max",
+          "label": "Jadwal kelas aktif",
+          "unit": "jadwal",
+          "value": null
+        },
+        {
+          "key": "clubs.max",
+          "label": "Cabang",
+          "unit": "cabang",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "key": "attendance_code",
+      "label": "Absensi input kode",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "attendance_qr",
+      "label": "Absensi scan QR",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "face_attendance",
+      "label": "Absensi face recognition",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 75000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 450000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 900000
+        }
+      ]
+    },
+    {
+      "key": "point_of_sale",
+      "label": "Point of Sales · paket",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "pos_product",
+      "label": "Point of Sales · produk",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 50000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 300000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 600000
+        }
+      ]
+    },
+    {
+      "key": "payment_gateway",
+      "label": "Payment gateway",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "custom_invoice",
+      "label": "Custom invoice",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "key": "class_management",
+      "label": "Manajemen kelas",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "cutting_session",
+      "label": "Potong sesi",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "measurement",
+      "label": "Pengukuran member",
+      "access": {
+        "free": "included",
+        "starter": "addon",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "key": "freeze",
+      "label": "Freeze",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "key": "member_transfer",
+      "label": "Transfer member",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "key": "voucher",
+      "label": "Voucher",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "referral",
+      "label": "Referral",
+      "access": {
+        "free": "included",
+        "starter": "addon",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 35000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 210000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 420000
+        }
+      ]
+    },
+    {
+      "key": "loyalty_point",
+      "label": "Loyalty & redeem point",
+      "access": {
+        "free": "included",
+        "starter": "addon",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 35000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 210000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 420000
+        }
+      ]
+    },
+    {
+      "key": "member_web_app",
+      "label": "Aplikasi web member & coach",
+      "access": {
+        "free": "included",
+        "starter": "addon",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 50000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 300000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 600000
+        }
+      ]
+    },
+    {
+      "key": "member_mobile_app",
+      "label": "Aplikasi mobile member & coach",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 100000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 600000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 1200000
+        }
+      ]
+    },
+    {
+      "key": "self_order",
+      "label": "Pesan sendiri",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 50000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 300000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 600000
+        }
+      ]
+    },
+    {
+      "key": "app_customization",
+      "label": "Kelola tampilan aplikasi mobile",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 35000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 210000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 420000
+        }
+      ]
+    },
+    {
+      "key": "commission_sales",
+      "label": "Komisi sales",
+      "access": {
+        "free": "included",
+        "starter": "addon",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "key": "commission",
+      "label": "Komisi PT & kelas",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 35000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 210000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 420000
+        }
+      ]
+    },
+    {
+      "key": "coach_rating",
+      "label": "Rating coach",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "key": "whatsapp",
+      "label": "WhatsApp automation",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "report_basic",
+      "label": "Laporan dasar",
+      "access": {
+        "free": "included",
+        "starter": "included",
+        "basic": "included",
+        "pro": "included"
+      },
+      "addon_prices": []
+    },
+    {
+      "key": "analytics_advanced",
+      "label": "Laporan lengkap",
+      "access": {
+        "free": "none",
+        "starter": "addon",
+        "basic": "addon",
+        "pro": "included"
+      },
+      "addon_prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 50000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 300000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 600000
+        }
+      ]
+    }
+  ],
+  "addons": [
+    {
+      "code": "member_pack",
+      "name": "Member aktif",
+      "unit_label": "per 500 member",
+      "price_mode": "fixed",
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 50000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 300000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 600000
+        }
+      ],
+      "plans": [
+        "pro",
+        "basic",
+        "starter"
+      ]
+    },
+    {
+      "code": "staff_seat",
+      "name": "User staf",
+      "unit_label": "per 1 orang",
+      "price_mode": "fixed",
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 25000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 150000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 300000
+        }
+      ],
+      "plans": [
+        "pro",
+        "basic",
+        "starter"
+      ]
+    },
+    {
+      "code": "coach_pack",
+      "name": "User coach",
+      "unit_label": "per 1 coach",
+      "price_mode": "fixed",
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 35000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 210000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 420000
+        }
+      ],
+      "plans": [
+        "pro",
+        "basic",
+        "starter"
+      ]
+    },
+    {
+      "code": "class_schedule_pack",
+      "name": "Jadwal kelas aktif",
+      "unit_label": "per 10 jadwal",
+      "price_mode": "fixed",
+      "prices": [
+        {
+          "code": "monthly",
+          "label": "Bulanan",
+          "months": 1,
+          "days": 0,
+          "amount": 10000
+        },
+        {
+          "code": "6_months",
+          "label": "6 Bulan",
+          "months": 6,
+          "days": 0,
+          "amount": 60000
+        },
+        {
+          "code": "yearly",
+          "label": "Tahunan",
+          "months": 12,
+          "days": 0,
+          "amount": 120000
+        }
+      ],
+      "plans": [
+        "basic",
+        "starter"
+      ]
+    },
+    {
+      "code": "branch",
+      "name": "Cabang tambahan",
+      "unit_label": "per 1 cabang",
+      "price_mode": "follow_plan",
+      "prices": [],
+      "plans": [
+        "pro",
+        "basic"
+      ]
+    }
+  ]
+}

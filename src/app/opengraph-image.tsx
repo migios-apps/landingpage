@@ -2,11 +2,14 @@ import { readFile } from "node:fs/promises"
 import { join } from "node:path"
 import { ImageResponse } from "next/og"
 
+import { getPricing } from "@/lib/pricing-data"
+
 export const alt = "Migios, software manajemen gym dan fitness"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
 export default async function OpengraphImage() {
+  const trialDays = (await getPricing()).trial_days
   const logo = await readFile(join(process.cwd(), "public/images/migios-logo.svg"))
   const logoSrc = `data:image/svg+xml;base64,${logo.toString("base64")}`
 
@@ -38,7 +41,7 @@ export default async function OpengraphImage() {
           </div>
         </div>
         <div style={{ display: "flex", gap: 16 }}>
-          {["Gratis 30 hari", "Kasir sudah termasuk", "Multi-cabang"].map((fact) => (
+          {[trialDays ? `Gratis ${trialDays} hari` : "Coba gratis", "Kasir sudah termasuk", "Multi-cabang"].map((fact) => (
             <div
               key={fact}
               style={{
